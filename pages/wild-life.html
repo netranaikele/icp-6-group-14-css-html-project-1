@@ -8,19 +8,20 @@
 
     <style>
       body{
-      background-image: url("../img/backgroundpic.jpg");
+      background-image: url("../img/backgroundpic.png");
       background-position: 0px ;
 background-size: 100% 100%;
 height:190vh;
 margin: 0%;
   }
-      .heading-main{
+.heading-main{
 overflow: hidden;
     margin-left: auto;
     margin-right: auto;
       }
     .heading{  
-        color: #00394d;
+      font-family:sans-serif;
+        color: #f4db79;
         font-weight: bolder;
         font-size: 60px;
         text-align:center;
@@ -29,16 +30,19 @@ overflow: hidden;
         margin-top: 0%;
         border:8px double white;
         border-radius: 30px;
+        -webkit-text-fill-color:#00394d; 
+        -webkit-text-stroke: 2px rgb(133, 217, 219);
+       
     }
 .main-menu{
   display:flex;justify-content:end;flex-wrap: wrap;
-  background-image:  linear-gradient(to left,#000000,#000033);
+  background-image:linear-gradient(to left,#080342, #032644);
   height:50px;
 }
 .menus{
   color:#dbe3e7;
-  background-color: #00394d ;
- margin: 20px;
+background-color:#00394d ;
+  margin: 20px;
   padding: 5px;
   border:2px solid cadetblue;
   width:60px;
@@ -46,6 +50,12 @@ overflow: hidden;
   font-weight: 10px;
  font-family:fantasy;
  position: relative;
+}
+
+.menus:hover{
+    border-radius: 20px;
+  background-color:  #190b62;
+    box-shadow:1px 1px 5px #e6cee9 ,1px 1px 5px #044349;
 }
 .menu-container{
   margin:22px;
@@ -77,7 +87,7 @@ overflow: hidden;
   box-shadow:1px 1px 5px #e6cee9 ,1px 1px 5px #044349;
   border:1px double  #c8c3cc ;
   transition: 0.5s linear;
-  ;
+  
 }
 .dropdown-content {
   display: none;
@@ -106,30 +116,35 @@ position: absolute;
 .edit-options{
   border:1px solid black;
 }
-.text-photo{margin-bottom: 29px;
-  color: red;opacity: 0.8;
+.text-photo{
+  color: rgb(45, 19, 19);
+  
+  opacity: 0.8;
   filter: drop-shadow( 5px 5px 11px black);
+  margin-top: 0%;
 
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .head{
   margin-top: 0%;
 }
-
-.jaguarimg{
-  height:450px;width: 1500px;
-  margin-top: 0%;opacity: 0.9;
-  box-sizing: border-box;border-radius: 6px;
-  border:3px xolid midnightblue;
-  border-top:3px xolid midnightblue; 
+.center-img{
+  position:absolute ;
 }
+
+.birdpic{
+  height:450px;width: 1290px;
+  margin-top: 0%;opacity: 0.8;
+  border-radius: 20%;
+  position:relative;
+}
+
     .cards{
 
     }
     </style>
 </head>
 <body> 
-
   <div class="main-menu">
 <div class="menu-container">
   <a href="main.html" class="menus" target="_blank">HOME</a>
@@ -151,12 +166,14 @@ position: absolute;
    <div>
     <h1 class="heading"> WILD-LIFE PHOTOGRAPHY</h1>
    </div>
+   <div class="center-img">
    <h1 class="text-photo">📸OUR AWESOME CLICKS </h1>
-    <img src="../img/jaguar.jpg" class="jaguarimg">
+    <img src="../img/birdpic.jpg" class="birdpic">
   </div>
+</div>
 
    <div class="card-slotes">
-<div class="cards">
+<div class="cards"><h1>cards add </h1>
 </div>  
 </div>
   
