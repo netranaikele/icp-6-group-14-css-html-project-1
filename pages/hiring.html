@@ -3,26 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hiring page</title>
-    <style>
-        body{
-            background-color: black;
-            margin: 0px;
-            padding: 0px;
+    <title>LANDING_PAGE</title>
+    <link rel="stylesheet">
+    <style type="text/css">
+        *{padding: 0; margin: 0; box-sizing: border-box;}
+        header{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(to left,#2b2626,#000033);
+              background-size: cover;
+            font-family: sans-serif;
         }
-        .title-name{
-            background-color:tomato ;
-            text-align: cent
+        nav{
+            width: 100%;
+            height: 100px;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo{
+            font-size: 2em;
+            letter-spacing: 2px;
+        }
+        .menu a{
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            position: relative;
 
-        .navbar-name{
-            background-color: red;
-            text-align: center;
-            margin: 0px;
-            padding: 0px;
+        }
+        .menu a:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid white;
+            transition: 0.4s linear;
+        }
+        .menu a:hover:before{
+            width: 100%;
+        }
+        .login a{
+            text-decoration: none;
+            padding: 10px 20px;
+            color: white;
+            font-size: 20px;
+            background: indianred; 
+            border-radius: 8px;
+            transition: 0.4s;
+        }
+        .login a:hover{
+            background: transparent;
+            border: 1px solid indianred;
+        }
+        .h-txt{
+            max-width: 50em;
+            position: absolute;
+            top: 50%;
+            left: 25%;
+            transform: translate(-50%,-50%);
+            text-align: left;
+            color: white;
+        }
+        .h-txt span{
+            letter-spacing: 5px;
+        }
+        .h-txt h1{
+            font-size: 5em;
+        }
+        .h-txt a{
+            text-decoration:none;
+            background: indianred;
+            color: white;
+            padding: 10px 1px;
+            letter-spacing: 3px;
+            transition: all;
+        }
+        .h-txt a{
+            background: indianred;
+            border: 1px solid indianred;
+            border-radius: 5px;
+        }
+        .footer{
+            background-color: aliceblue;
         }
     </style>
 </head>
 <body>
-    <h1 class="navbar-name">Hiring</h1>
-</body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h5><b>Logo co.</b></h5>
+            </div>
+            
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Portpolio</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="login">
+                <a href="#">LOGIN</a>
+            </div>
+        </nav>
+       
+       
+    </header>
+    <footer align="center">Design by &copy G-14 ICP6.0</footer>    
+</body> 
 </html>
