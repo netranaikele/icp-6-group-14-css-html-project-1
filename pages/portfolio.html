@@ -3,266 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-  <link rel="stylesheet" href="theme.css">
-
+    <title>portfolip</title>
+    <link rel="stylesheet" href="theme.css">
     <style>
-      body{
-      background-image: url("../img/backgroundimg.jpg");
-      background-position: 0px ;
-background-size: 100% 100%;
-height:220vh;
-margin: 0%;
-  }
-  .camera-pic{
-    height:48px;
-background-color: #c8c3cc;
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: bisque;
+            background-image: url("../img/background.png");
+            background-position:center;
+            background-size: 100% 100%;
+            height:230vh; 
+            padding:0; 
+            margin:0%;
+        }
 
-  }
- .title{
-  margin-right: 200px;
-   color: #dbe3e7;
-   filter: drop-shadow(3px 3px 10px black);
-   -webkit-text-stroke-width:1px;
-   -webkit-text-stroke-color:  #588c7e; 
- }
-.heading-main{
-overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-    display:inline-flexbox;flex-wrap: wrap;
-    cursor: pointer;
-    margin-top: 20px;
-
-      }
-    .heading{ 
-font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      font-weight: bolder;
-        font-size: 60px;
-        text-align:center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10px;
-   -webkit-text-fill-color:#80ced6; 
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color:  black;
-  filter: drop-shadow( 5px 5px 11px rgb(243, 243, 240));
-        
-       
-    }
-.main-menu{
-  display:flex;justify-content:flex-end;flex-wrap: wrap;
- background-color: #03373c;
-  height:55px; box-shadow:1px 1px 10px #010006; 
-
+.navbar{
+  color:burlywood;
+  font-weight:normal;
+  font-size: 60px;
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  border:8px double white;
+  font-size: 80px;
+  margin: 10px 100px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-align: center;
 }
-.menus{
-  color:#dbe3e7;
-background-color:#00394d ;
-  margin: 20px;
-  padding: 5px;
-  border:2px solid cadetblue;
-  width:60px;
-  border-radius:6px ;
-  font-weight: 10px;
- font-family:fantasy;
-
-}
-.menu-container{
-  margin:22px;
-  
-}
-.dropdown {
-  float: left;
-  padding:5px;
-  overflow: hidden;
+.main-heading{
+  color:white;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
 }
 
-.dropdown .dropbtn {
-  font-weight: 14px;
-  width:60px;height:33px ;
-  font-family:fantasy;
-  border-radius: 6px;
-  border: 2px solid cadetblue;
-  color:#dbe3e7;
-  padding: 5px;
-  background-color:#00394d; 
-  margin: 8px;
-  margin-right: 70px;
-  margin-bottom: 0px;margin-top: 9.8px;
+.card{
+  height: 350px;
+  width: 350px;
+  background-color: bisque;
+  border-radius: 20px;
+  border: 2px solid white;
+  display: inline-block;
+  margin: 40px 40px;
+  cursor: pointer;
 }
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color:  #190b62;
-  cursor: pointer;color: #dbe3e7;
-  box-shadow:1px 1px 5px #e6cee9 ,1px 1px 5px #044349;
-  border:1px double  #c8c3cc ;
-  transition: 0.4s linear;
-  ;
-}
-.dropdown-content {
-  display: none;
-  background-color:#035f81;
 
-position:relative;
-  box-shadow: 1px 1px 10px #e6cee9 ,1px 1px 10px #03373c;
+.navbar-content{
+  width: 50px;
+  height: 30px;
+  color:black ;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px 40px;
+  background-color:gold;
+}
+.card-img{
+  height: 350px;
+  width: 350px;
+  border-radius: 20px;
+}
+
+.card-btn{
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 5px 25px;
+  background-color: gold;
+  margin-left:100px ;
+  margin-top: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+
+.navbar-des{
+  color: bisque;
+  font-size: 30px;
+  text-align: center;
  
-}
-.dropdown-content a {
-  float:none;
-  color: #010513;
-  padding:5px;
-  text-decoration: none;
-  display: block;
-  z-index: 9;
-  border: 2px solid rgb(7, 4, 0);
-  text-align: left;
-border-radius:8px ;
-}
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-.dropdown:hover .dropdown-content {
-  display:block;
-}
-.text-photo{
-  color: rgb(244, 240, 240);
-  filter: drop-shadow( 5px 5px 11px black);
-  margin:0%;
-  margin-left: 450px;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  
+
 }
 
-.birdpic{
-  height:450px;width:1261px;
-  margin-top:20px;
-  border-radius:2px;
-  position:relative;
-  border: 2px solid black;
-}
-.main-card-section{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:space-around;
-  margin-top: 30px;
+.btn{
+  color: black;
+  background-color: rgb(248, 214, 62) ;
+  margin: 20px;
+  padding: 10px 15px;
+  width:80px;
+  border-radius:20px ;
+  font-weight: 15px;
+   position: relative;  
 }
 
-    .cards{
-      width:260px;
-      border: 2px double rgb(3, 38, 58) ;
-      height:220px;
-      padding:5px;
-      margin:20px;
-      box-shadow: 1px 1px 30px rgba(93, 157, 240, 0.2),-1px -1px 10px rgb(1, 52, 81);
-    }
-    .card-image{
-      height:210px;
-      width: 205px;
-      display: block;
-      margin:5px auto;
-      margin-left: auto;
-      margin-right: auto; 
-      filter: drop-shadow(0px 0px 10px rgb(233, 233, 237) ) ;
-    }
-    </style>
+.card-btn:hover{
+  background-color: yellow;
+  box-shadow: 0 0 10px 3px gray;
+}
+
+.card:hover{
+  box-shadow: 0 0 15px 4px white ;
+}
+
+
+.navbar-content:hover{
+  background-color:yellow;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn:hover{
+  border-radius: 50px;
+  background-color: gold;
+  box-shadow: 0 0 10px 3px white;
+
+}
+
+</style>    
 </head>
-<body> 
+<body>
 
-  <div class="main-menu">
-  <img src="../img/camera.png" class="camera-pic">
-    <h1 class="title">ROAD TO PHOTOGRAPHY</h1>
-<div class="menu-container">
-  <a href="main.html" class="menus" target="_blank">HOME</a>
-   <a href="about.html"  class="menus" target="_blank">ABOUT US</a>
-   <a href="wedding.html"  class="menus" target="_blank">NEXT</a>
-   </div>
-   <div class="dropdown">
-    <button class="dropbtn">EXPLORE
-    </button>
-    <div class="dropdown-content">
-      <a href="wedding.html" target="_blank">wedding photoshootes</a>
-      <a href="model.html" target="_blank">model photoshootes</a>
-      <a href="contact.html" target="_blank">contact us</a>
-    </div>
-  </div>
-  </div>
+<h1 class="navbar">Portfolio</h1>
+<div>
 
-   <div class="heading-main">
-    <h1 class="heading"> WILD-LIFE PHOTOGRAPHY</h1>
-   <div class="center-img">
-<img src="../img/birdpic.jpg" class="birdpic">
-    <h1 class="text-photo" style="position: absolute;">📸OUR AWESOME CLICKS </h1>
-  </div>
+<a href="../index.html" class="btn" target="_blank">HOME</a>
+
+<h1 class="navbar">Photo Gallary</h1>
+
+<div class="navbar-des">
+<p>“A good snapshot keeps a moment that s gone from running away.”</p>
 </div>
 
-<div class="main-card-section">
-  <div class="cards">
-<img src="../img/tiger.jpg" class="card-image">
-  </div>
-
-  <div class="cards">
-    <img src="../img/duck.jpg" class="card-image">
-      </div>
-
-      <div class="cards">
-        <img src="../img/leopard.jpg" class="card-image">
-          </div>
-
-          <div class="cards">
-            <img src="../img/reindeer.jpg" class="card-image">
-              </div>
-
-              <div class="cards">
-                <img src="../img/peacock.jpg" class="card-image">
-                  </div>
-
-                  <div class="cards">
-                    <img src="../img/crocodile.jpeg" class="card-image">
-                      </div>
-
-                          <div class="cards">
-                            <img src="../img/cheetah.jpeg" class="card-image">
-                              </div>
-
-                              <div class="cards">
-                                <img src="../img/elephant.jpg" class="card-image">
-                                  </div>
-
-                                  <div class="cards">
-                                    <img src="../img/birdpic.jpg" class="card-image">
-                                      </div>
-
-                                      <div class="cards">
-                                        <img src="../img/baby-tiger.jpg" class="card-image">
-                                          </div>
-
-                                          <div class="cards">
-                                            <img src="../img/elephant.jpg" class="card-image">
-                                              </div>
-
-                                              <div class="cards">
-                                                <img src="../img/elephant.jpg" class="card-image">
-                                                  </div>
-
-                                                  <div class="cards">
-                                                    <img src="../img/elephant.jpg" class="card-image">
-                                                      </div>
-
-                                                      <div class="cards">
-                                                        <img src="../img/elephant.jpg" class="card-image">
-                                                          </div>
-
-
-                                                          <div class="cards">
-                                                            <img src="../img/elephant.jpg" class="card-image">
-                                                              </div>
-
-                                                              <div class="cards">
-                                                                <img src="../img/elephant.jpg" class="card-image">
-                                                                  </div>
+<div class="card">
+<img src="../img/card-img1.jpg" class="card-img">
+<button class="card-btn">Buy Now</button>
 </div>
-  
-  
-<script src="https://kit.fontawesome.com/4e319ddf15.js" crossorigin="anonymous"></script>
+
+<div class="card">
+<img src="../img/card-img2.jpg" class="card-img">
+<button class="card-btn">Buy Now</button>
+</div>
+
+<div class="card">
+<img src="../img/card-img3.jpg" class="card-img">
+<button class="card-btn">Buy Now</button>
+</div>  
+
+<div class="card">
+<img src="../img/card-img7.jpg" class="card-img">
+<button class="card-btn">Buy Now</button>
+</div>  
+
+<div>
+<a href="../index.html" class="navbar-content">
+Home 
+</a>
+&nbsp;
+<a href="./wild-life.html" class="navbar-content">About </a>
+<div class="card">
+<img src="../img/card-img8.jpg" class="card-img">
+<button class="card-btn">Buy Now</button>
+</div>  
+
+<a href="./portfolio.html" class="navbar-content">wedding  </a>
+<div class="card">
+<img src="../img/card-img9.jpg" class="card-img">
+<button class="card-btn">Buy Now</button>
+</div>  
+
+<a href="./Hiring.html" class="navbar-content"> wild-life  </a>
+<div class="card">
+<img src="../img/card-img4.jpg" class="card-img">
+<button class="card-btn">Buy Now</button>
+</div>  
+
+<a href="./model.html" class="navbar-content"> Model  </a>
+<div class="card">
+<img src="../img/card-img5.jpg" class="card-img">
+<button class="card-btn">Buy Now</button>
+</div> 
+
+<a href="./contact.html" class="navbar-content"> Hiring </a>
+<div class="card">
+<img src="../img/card-img6.jpg" class="card-img">
+<button class="card-btn">Buy Now</button>
+</div>
+
+
+<a href="./about.html" class="navbar-content"> contact</a>
+</div>
+
+
+
 </body>
 </html>
+
+
