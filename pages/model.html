@@ -3,88 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MODEL-PHOTOSHOOT</title>
+    <title>Document</title>
+  <link rel="stylesheet" href="theme.css">
+
     <style>
+      body{
+      background-image: url("backgroundimg.jpg");
+      background-position: 0px ;
+background-size: 100% 100%;
+height:220vh;
+margin: 0%;
+  }git 
+  .camera-pic{
+    height:50px;
+background-color: #c8c3cc;
 
-        body{
-            background-image: url("../img/backgroundimg.jpg");
-            background-position: 0px ;
-      background-size: 100% 100%;
-      height:220vh;
-      margin: 0%;
-        }
-        .title{
-            background-color: aqua;
-            text-align: center;
-            padding: 0px;
-            margin: 0px;
-        }
-        body{
-            background-image: url("model.png");
-        }
-       
-     
-     .heading-main{
-          overflow: hidden;
-          margin-left: auto;
-          margin-right: auto;
+  }
+ .title{
+  margin-right: 200px;
+   color: #dbe3e7;
+   filter: drop-shadow(3px 3px 10px black);
+   -webkit-text-stroke-width:1px;
+   -webkit-text-stroke-color:  #588c7e; 
+ }
+.heading-main{
+overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    display:inline-flexbox;flex-wrap: wrap;
+    cursor: pointer;
+    margin-top: 20px;
+
       }
-
-      .main-menu{
-          display:flex;justify-content:end;flex-wrap: wrap;
-          background-image:  linear-gradient;
-         height:50px;
-}
-.menu-container{
-  margin:22px;
-}
-    .heading{  
-        color: #00394d;
-        font-weight: bolder;
+    .heading{ 
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: bolder;
         font-size: 60px;
         text-align:center;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 0%;
-        border:8px double black;
-        border-radius: 30px;
+        margin-top: 10px;
+   -webkit-text-fill-color:#80ced6; 
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color:  black;
+  filter: drop-shadow( 5px 5px 11px rgb(243, 243, 240));
+        
+       
     }
-    .main-menu{
-  display:flex;justify-content:end;flex-wrap: wrap;
-  background-image:  linear-gradient(to left,#000000,#000033);
-  height:50px;
+.main-menu{
+  display:flex;justify-content:flex-end;flex-wrap: wrap;
+ background-color: #03373c;
+  height:55px; box-shadow:1px 1px 10px #010006; 
+
 }
 .menus{
   color:#dbe3e7;
-  background-color: #00394d ;
- margin: 20px;
+background-color:#00394d ;
+  margin: 20px;
   padding: 5px;
   border:2px solid cadetblue;
   width:60px;
   border-radius:6px ;
   font-weight: 10px;
  font-family:fantasy;
- position: relative;
+
 }
 .menu-container{
   margin:22px;
   
 }
+.dropdown {
+  float: left;
+  padding:5px;
+  overflow: hidden;
+}
 
-    
+.dropdown .dropbtn {
+  font-weight: 14px;
+  width:60px;height:33px ;
+  font-family:fantasy;
+  border-radius: 6px;
+  border: 2px solid cadetblue;
+  color:#dbe3e7;
+  padding: 5px;
+  background-color:#00394d; 
+  margin: 8px;
+  margin-right: 70px;
+  margin-bottom: 0px;margin-top: 9.8px;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:  #190b62;
+  cursor: pointer;color: #dbe3e7;
+  box-shadow:1px 1px 5px #e6cee9 ,1px 1px 5px #044349;
+  border:1px double  #c8c3cc ;
+  transition: 0.4s linear;
+  ;
+}
+.dropdown-content {
+  display: none;
+  background-color:#035f81;
+
+position:relative;
+  box-shadow: 1px 1px 10px #e6cee9 ,1px 1px 10px #03373c;
+ 
+}
+.dropdown-content a {
+  float:none;
+  color: #010513;
+  padding:5px;
+  text-decoration: none;
+  display: block;
+  z-index: 9;
+  border: 2px solid rgb(7, 4, 0);
+  text-align: left;
+border-radius:8px ;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display:block;
+}
+.text-photo{
+  color: rgb(244, 240, 240);
+  filter: drop-shadow( 5px 5px 11px black);
+  margin:0%;
+  margin-left: 450px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+.birdpic{
+  height:450px;width:1261px;
+  margin-top:20px;
+  border-radius:2px;
+  position:relative;
+  border: 2px solid black;
+}
+.main-card-section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  margin-top: 30px;
+}
+
+    .cards{
+      width:260px;
+      border: 2px double rgb(3, 38, 58) ;
+      height:220px;
+      padding:5px;
+      margin:20px;
+      box-shadow: 1px 1px 30px rgba(93, 157, 240, 0.2),-1px -1px 10px rgb(1, 52, 81);
+    }
+    .card-image{
+      height:210px;
+      width: 205px;
+      display: block;
+      margin:5px auto;
+      margin-left: auto;
+      margin-right: auto; 
+      filter: drop-shadow(0px 0px 10px rgb(233, 233, 237) ) ;
+    }
     </style>
 </head>
-<body>
-    <div class="heading-main">
-        <div>
-         <h1 class="heading"> MODEL-PHOTOSHOOT</h1>
-        </div>
+<body> 
 
-        <div class="main-menu">
-            <div class="menu-container">
-              <a href="main.html" class="menus" target="_blank">HOME</a>
-               <a href="about.html"  class="menus" target="_blank">ABOUT US</a>
-               <a href="wedding.html"  class="menus" target="_blank">NEXT</a>
-          </div>         
-   </body>
+  <div class="main-menu">
+    <img src="../img/camera.png" class="camera-pic">
+    <h1 class="title">ROAD TO PHOTOGRAPHY</h1>
+<div class="menu-container">
+  <a href="main.html" class="menus" target="_blank">HOME</a>
+   <a href="about.html"  class="menus" target="_blank">ABOUT US</a>
+   <a href="wedding.html"  class="menus" target="_blank">NEXT</a>
+   </div>
+   <div class="dropdown">
+    <button class="dropbtn">EXPLORE
+    </button>
+    <div class="dropdown-content">
+      <a href="wedding.html" target="_blank">wedding photoshootes</a>
+      <a href="model.html" target="_blank">model photoshootes</a>
+      <a href="contact.html" target="_blank">contact us</a>
+    </div>
+  </div>
+  </div>
+
+   <div class="heading-main">
+    <h1 class="heading"> MODEL-PHOTOSHOOT</h1>
+   <div class="center-img">
+<img src="../img/model.png" class="birdpic">
+    <h1 class="text-photo" style="position: absolute;">📸OUR AWESOME CLICKS </h1>
+  </div>
+</div>
+
+<div class="main-card-section">
+  <div class="cards">
+<img src="../img/model7.png.jpg" class="card-image">
+  </div>
+
+  <div class="cards">
+    <img src="../img/model2.png.jpg" class="card-image">
+      </div>
+
+      <div class="cards">
+        <img src="../img/model3.png.jpg" class="card-image">
+          </div>
+
+          <div class="cards">
+            <img src="../img/model4.png.jpg" class="card-image">
+              </div>
+
+              <div class="cards">
+                <img src="../img/model5.png.jpg" class="card-image">
+                  </div>
+
+                  <div class="cards">
+                    <img src="../img/model6.png.jpg" class="card-image">
+                      </div>
+
+                          <div class="cards">
+                            <img src="../img/modelD.png" class="card-image">
+                              </div>
+
+                              <div class="cards">
+                                <img src="../img/model8.png" class="card-image">
+                                  </div>
+
+                                  <div class="cards">
+                                    <img src="../img/model9.png" class="card-image">
+                                      </div>
+
+                                      <div class="cards">
+                                        <img src="../img/model10.png" class="card-image">
+                                          </div>
+
+                                          <div class="cards">
+                                            <img src="../img/modelA.png" class="card-image">
+                                              </div>
+
+                                              <div class="cards">
+                                                <img src="../img/model11.png" class="card-image">
+                                                  </div>
+
+                                                  <div class="cards">
+                                                    <img src="../img/model13.png" class="card-image">
+                                                      </div>
+
+                                                      <div class="cards">
+                                                        <img src="../img/model12.png" class="card-image">
+                                                          </div>
+
+
+                                                          <div class="cards">
+                                                            <img src="../img/modelB.png" class="card-image">
+                                                              </div>
+
+                                                              <div class="cards">
+                                                                <img src="../img/modelC.png" class="card-image">
+                                                                  </div>
+</div>
+  
+  
+<script src="https://kit.fontawesome.com/4e319ddf15.js" crossorigin="anonymous"></script>
+</body>
 </html>
