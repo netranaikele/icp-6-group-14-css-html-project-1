@@ -1,4 +1,8 @@
 body{
     
+<<<<<<< HEAD
     background-image: linear-gradient(to left,#000000,#0d0d70)
+=======
+    background-image: linear-gradient(to left,#000000,#000033);
+>>>>>>> 826ff25bddb88e574fd8da810834eb1cb16fadba
 }

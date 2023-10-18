@@ -1,103 +1,180 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marriage Photography</title>
-    <link rel="stylesheet" href="theme.css">
+    <title>Wedding page</title>
+  <link rel="stylesheet" href="theme.css">
     <style>
-        body{
-            background-image: url("../img/background image.jpg");
-            background-position:center;
-            background-size: 100% 100%;
-            height:270vh; 
-            padding:0; 
-            margin:0%;
-        }
-        .title-name{
-            height: 90px;
-            width: auto;
-            color: rgb(238, 17, 157);
-            background-color: rgb(253, 176, 189);
-            font-weight: bolder;
-            font-size: 60px;
-            padding: 10px;
-            border:10px DOUBLE rgb(15, 15, 15);
-            border-radius: 30px; 
-            text-align: center;
-            margin-top: 0px;
-        }
-         .message{
-            margin-left: 85px;
-            font-weight: bold;
-            color: #fff;
-            margin-top: 35px;
-        }
-            .anchor{
-            color:black ;
-            margin-left: 30px;
-            margin-right: 30px;
-            padding: 10px;
-            background-color: aquamarine;
-            border-radius: 20px;
-        }
+      body{
+      background-image: url("../img/wedding\ image.jpg");
+      background-position: 0px ;
+      background-size: 100% 100%;
+      height:190vh;
+      margin: 0%;
+     }
+      .heading-main{
+      overflow: hidden;
+      margin-left: auto;
+      margin-right: auto;
+      }
+    
+      .heading{  
+        font-family:sans-serif;
+        color: #f4db79;
+        font-weight: bolder;
+        font-size: 60px;
+        text-align:center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0%;
+        border:8px double white;
+        border-radius: 30px;
+        -webkit-text-fill-color:#00394d; 
+        -webkit-text-stroke: 2px rgb(133, 217, 219);
+      }
 
-        .anchor:hover{
-            border-radius: 5px;
-            background-color: pink;
-            transition: 0.5s;
-        }
-            .heading{
-            margin-left: 85px;
-            color:tomato;
-            margin-top: 115px;
-        }
+        
+    .main-menu{
+         display:flex;justify-content:end;flex-wrap: wrap;
+         background-image:  linear-gradient(to left,#000000,#000033);
+          height:50px;
+}
+.menus{
+  color:#dbe3e7;
+  background-color: #00394d ;
+ margin: 20px;
+  padding: 5px;
+  border:2px solid cadetblue;
+  width:60px;
+  border-radius:6px ;
+  font-weight: 10px;
+ font-family:fantasy;
+ position: relative;
+}
+
+.menus:hover{
+    border-radius: 20px;
+  background-color:  #190b62;
+    box-shadow:1px 1px 5px #e6cee9 ,1px 1px 5px #044349;
+}
+.menu-container{
+  margin:22px;
+  
+}
+.dropdown {
+  float: left;
+  padding:5px;
+  
+  overflow: hidden;
+ 
+}
+.dropdown .dropbtn {
+  font-weight: 10px;
+  width:60px;
+  margin-top: 15px;
+  font-family:fantasy;
+  border-radius: 6px;
+  border: 2px solid cadetblue;
+  color:#dbe3e7;
+  padding: 5px;
+  background-color:#00394d; 
+  margin: 8px;
+  margin-right: 70px;
+  margin-bottom: 22px;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:  #190b62;
+  cursor: pointer;color: #dbe3e7;
+  box-shadow:1px 1px 5px #e6cee9 ,1px 1px 5px #044349;
+  border:1px double  #c8c3cc ;
+  transition: 0.5s linear;
+  ;
+}
+.dropdown-content {
+  display: none;
+  background-color:#77a8a8;
+min-width: auto;
+position: absolute;
+
+  box-shadow: 1px 1px 10px #e2d5e3 ,1px 1px 10px #03373c;
+ 
+}
+.dropdown-content a {
+  float:none;
+  color: #021119;;
+  padding:22px;
+  text-decoration: none;
+  display: block;
+  z-index: 1;
+  text-align: left;
+}
+
+.description{
+    color: #fff;
+    margin-left: 20px;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.edit-options{
+  border:1px solid black;
+}
+.heading-name{margin-bottom: 29px;
+  color: red;opacity: 0.8;
+  margin-left: 100px;
+  margin-top: 90px;
+  filter: drop-shadow( 5px 5px 11px black);
+
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.head{
+  margin-top: 0%;
+}
+    .cards{
+
+    }
     </style>
 </head>
-<body>
-    <h1 class="title-name">🤵🏻MARRIAGE 📸PHOTOGRAPHY👰🏻</h1>
-  
-    <a href="../index.html" class="anchor">
-        Home page
-    </a>
-    &nbsp;
-    <a href="./wild-life.html" class="anchor">
-        Wildlife page
-    </a>
-    <a href="./portfolio.html" class="anchor">
-        portfolio page
-    </a>
+<body> 
 
-    <a href="./Hiring.html" class="anchor">
-        Hiring page
-    </a>
+  <div class="main-menu">
+<div class="menu-container">
+  <a href="main.html" class="menus" target="_blank">HOME</a>
+   <a href="about.html"  class="menus" target="_blank">ABOUT US</a>
+   <a href="wedding.html"  class="menus" target="_blank">NEXT</a>
+   </div>
 
-    <a href="./model.html" class="anchor">
-        Model page
-      </a>
+   <div class="dropdown">
+    <button class="dropbtn">
+        EXPLORE
+    </button>
 
-    <a href="./contact.html" class="anchor">
-        Contact page
-    </a>
-
-    <a href="./about.html" class="anchor">
-        About
-    </a>
-
-    <a href="./exibition.html" class="anchor">
-        Exhibition
-    </a>
-
-    <a href="./portfolio.html" class="anchor">
-        portfolio
-    </a>
-
-    <h1 class="heading"> ✨<u>Wedding page</u></h1>
-    
-    <div>
-    <p class="message">
-        🙏🏻Thanks for visiting our little corner of the web. We hope you’ll join us on [Date] at [Venue]<br> to help celebrate our big day! 
-    </p>
+    <div class="dropdown-content">
+      <a href="wedding.html" target="_blank">Wild-life photography</a>
+      <a href="model.html" target="_blank">model photoshootes</a>
+      <a href="contact.html" target="_blank">contact us</a>
     </div>
+  </div>
+  </div>
+
+   <div class="heading-main">
+   <div>
+    <h1 class="heading">🤵🏻Wedding Photography👰🏻</h1>
+   </div>
+   <h1 class="heading-name">Wedding page </h1>
+   <p class="description">
+    🙏🏻Thanks for visiting our little corner of the web. We hope you’ll join us on [Date] at [Venue]<br> to help celebrate our big day! 
+   </p>
+
+   <div class="card-slotes">
+<div class="cards">
+</div>  
+</div>
+  
+
 </body>
 </html>
