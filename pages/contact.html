@@ -1,19 +1,54 @@
-<html lang="en">
+<html >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact us</title>
     <style>
+      body{
+        background-image: url("../img/backgroundimg.jpg");
+        background-position: 0px ;
+  background-size: 100% 100%;
+  height:220vh;
+  margin: 0%;
+    }
+      .main{ 
+      background-color: grey; 
+      margin: 2px;
+      }
      .contact{
-        font-size: 100px;
-        color: blue;
-        background-color: brown;
-        border-radius: 10px;
-
+      font-size: 50px;
+      text-align:center;
+      
      }
+     .photo{height: 200px;
+    }
+     .division{ height: 500px;
+      width: 800px;
+      display: flex;
+      flex-direction: row;
+      border: 2px solid black;
+     }
+     .main form{ display: flex;
+     flex-direction: column;
+     padding-left: 20px;
+     padding-top: 100px;
+     padding-bottom: 80px;
+      justify-content: space-around;}
+     .form{ text-align: center;
+      border-color:2px solid black;
+      font-size:15px;
+    border-radius: 10px;}
     </style>
 </head>
-<body>
+<body class="main">
    <h1 class="contact" >contact us</h1>
+  <div class="division"> <img src="photo.jpg" />
+   <form class="main form">
+    <input type="text" placeholder="Enter your Name" class="form"/>
+    <input type="email" placeholder="Enter Your E-mail" class="form"/>
+    <input type="password" placeholder="Enter Your password" class="form"/>
+    <button class="form">contact us</button>
+   </form> </div>
+   
 </body>
 </html>

@@ -8,44 +8,65 @@
 
     <style>
       body{
-      background-image: url("../img/backgroundpic.jpg");
+      background-image: url("../img/backgroundimg.jpg");
       background-position: 0px ;
 background-size: 100% 100%;
-height:190vh;
+height:220vh;
 margin: 0%;
+  }git 
+  .camera-pic{
+    height:50px;
+background-color: #c8c3cc;
+
   }
-      .heading-main{
+ .title{
+  margin-right: 200px;
+   color: #dbe3e7;
+   filter: drop-shadow(3px 3px 10px black);
+   -webkit-text-stroke-width:1px;
+   -webkit-text-stroke-color:  #588c7e; 
+ }
+.heading-main{
 overflow: hidden;
     margin-left: auto;
     margin-right: auto;
+    display:inline-flexbox;flex-wrap: wrap;
+    cursor: pointer;
+    margin-top: 20px;
+
       }
-    .heading{  
-        color: #00394d;
-        font-weight: bolder;
+    .heading{ 
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: bolder;
         font-size: 60px;
         text-align:center;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 0%;
-        border:8px double white;
-        border-radius: 30px;
+        margin-top: 10px;
+   -webkit-text-fill-color:#80ced6; 
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color:  black;
+  filter: drop-shadow( 5px 5px 11px rgb(243, 243, 240));
+        
+       
     }
 .main-menu{
-  display:flex;justify-content:end;flex-wrap: wrap;
-  background-image:  linear-gradient(to left,#000000,#000033);
-  height:50px;
+  display:flex;justify-content:flex-end;flex-wrap: wrap;
+ background-color: #03373c;
+  height:55px; box-shadow:1px 1px 10px #010006; 
+
 }
 .menus{
   color:#dbe3e7;
-  background-color: #00394d ;
- margin: 20px;
+background-color:#00394d ;
+  margin: 20px;
   padding: 5px;
   border:2px solid cadetblue;
   width:60px;
   border-radius:6px ;
   font-weight: 10px;
  font-family:fantasy;
- position: relative;
+
 }
 .menu-container{
   margin:22px;
@@ -54,13 +75,12 @@ overflow: hidden;
 .dropdown {
   float: left;
   padding:5px;
-  
   overflow: hidden;
- 
 }
+
 .dropdown .dropbtn {
-  font-weight: 10px;
-  width:60px;
+  font-weight: 14px;
+  width:60px;height:33px ;
   font-family:fantasy;
   border-radius: 6px;
   border: 2px solid cadetblue;
@@ -69,68 +89,88 @@ overflow: hidden;
   background-color:#00394d; 
   margin: 8px;
   margin-right: 70px;
-  margin-bottom: 22px;
+  margin-bottom: 0px;margin-top: 9.8px;
 }
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color:  #190b62;
   cursor: pointer;color: #dbe3e7;
   box-shadow:1px 1px 5px #e6cee9 ,1px 1px 5px #044349;
   border:1px double  #c8c3cc ;
-  transition: 0.5s linear;
+  transition: 0.4s linear;
   ;
 }
 .dropdown-content {
   display: none;
-  background-color:#77a8a8;
-min-width: auto;
-position: absolute;
+  background-color:#035f81;
 
+position:relative;
   box-shadow: 1px 1px 10px #e6cee9 ,1px 1px 10px #03373c;
  
 }
 .dropdown-content a {
   float:none;
-  color: #dbe3e7;;
-  padding:22px;
+  color: #010513;
+  padding:5px;
   text-decoration: none;
   display: block;
-  z-index: 1;
+  z-index: 9;
+  border: 2px solid rgb(7, 4, 0);
   text-align: left;
+border-radius:8px ;
 }
 .dropdown-content a:hover {
   background-color: #ddd;
 }
 .dropdown:hover .dropdown-content {
-  display: block;
+  display:block;
 }
-.edit-options{
-  border:1px solid black;
-}
-.text-photo{margin-bottom: 29px;
-  color: red;opacity: 0.8;
+.text-photo{
+  color: rgb(244, 240, 240);
   filter: drop-shadow( 5px 5px 11px black);
-
+  margin:0%;
+  margin-left: 450px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.head{
-  margin-top: 0%;
+  
 }
 
-.jaguarimg{
-  height:450px;width: 1500px;
-  margin-top: 0%;opacity: 0.9;
-  box-sizing: border-box;border-radius: 6px;
-  border:3px xolid midnightblue;
-  border-top:3px xolid midnightblue; 
+.birdpic{
+  height:450px;width:1261px;
+  margin-top:20px;
+  border-radius:2px;
+  position:relative;
+  border: 2px solid black;
 }
+.main-card-section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  margin-top: 30px;
+}
+
     .cards{
-
+      width:260px;
+      border: 2px double rgb(3, 38, 58) ;
+      height:220px;
+      padding:5px;
+      margin:20px;
+      box-shadow: 1px 1px 30px rgba(93, 157, 240, 0.2),-1px -1px 10px rgb(1, 52, 81);
+    }
+    .card-image{
+      height:210px;
+      width: 205px;
+      display: block;
+      margin:5px auto;
+      margin-left: auto;
+      margin-right: auto; 
+      filter: drop-shadow(0px 0px 10px rgb(233, 233, 237) ) ;
     }
     </style>
 </head>
 <body> 
 
   <div class="main-menu">
+    <img src="../img/camera.png" class="camera-pic">
+    <h1 class="title">ROAD TO PHOTOGRAPHY</h1>
 <div class="menu-container">
   <a href="main.html" class="menus" target="_blank">HOME</a>
    <a href="about.html"  class="menus" target="_blank">ABOUT US</a>
@@ -148,18 +188,81 @@ position: absolute;
   </div>
 
    <div class="heading-main">
-   <div>
     <h1 class="heading"> WILD-LIFE PHOTOGRAPHY</h1>
-   </div>
-   <h1 class="text-photo">📸OUR AWESOME CLICKS </h1>
-    <img src="../img/jaguar.jpg" class="jaguarimg">
+   <div class="center-img">
+<img src="../img/birdpic.jpg" class="birdpic">
+    <h1 class="text-photo" style="position: absolute;">📸OUR AWESOME CLICKS </h1>
+  </div>
+</div>
+
+<div class="main-card-section">
+  <div class="cards">
+<img src="../img/tiger.jpg" class="card-image">
   </div>
 
-   <div class="card-slotes">
-<div class="cards">
-</div>  
+  <div class="cards">
+    <img src="../img/duck.jpg" class="card-image">
+      </div>
+
+      <div class="cards">
+        <img src="../img/leopard.jpg" class="card-image">
+          </div>
+
+          <div class="cards">
+            <img src="../img/reindeer.jpg" class="card-image">
+              </div>
+
+              <div class="cards">
+                <img src="../img/peacock.jpg" class="card-image">
+                  </div>
+
+                  <div class="cards">
+                    <img src="../img/crocodile.jpeg" class="card-image">
+                      </div>
+
+                          <div class="cards">
+                            <img src="../img/cheetah.jpeg" class="card-image">
+                              </div>
+
+                              <div class="cards">
+                                <img src="../img/elephant.jpg" class="card-image">
+                                  </div>
+
+                                  <div class="cards">
+                                    <img src="../img/birdpic.jpg" class="card-image">
+                                      </div>
+
+                                      <div class="cards">
+                                        <img src="../img/baby-tiger.jpg" class="card-image">
+                                          </div>
+
+                                          <div class="cards">
+                                            <img src="../img/elephant.jpg" class="card-image">
+                                              </div>
+
+                                              <div class="cards">
+                                                <img src="../img/elephant.jpg" class="card-image">
+                                                  </div>
+
+                                                  <div class="cards">
+                                                    <img src="../img/elephant.jpg" class="card-image">
+                                                      </div>
+
+                                                      <div class="cards">
+                                                        <img src="../img/elephant.jpg" class="card-image">
+                                                          </div>
+
+
+                                                          <div class="cards">
+                                                            <img src="../img/elephant.jpg" class="card-image">
+                                                              </div>
+
+                                                              <div class="cards">
+                                                                <img src="../img/elephant.jpg" class="card-image">
+                                                                  </div>
 </div>
   
-
+  
+<script src="https://kit.fontawesome.com/4e319ddf15.js" crossorigin="anonymous"></script>
 </body>
 </html>
