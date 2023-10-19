@@ -3,6 +3,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact us</title>
+<<<<<<< HEAD
+     <style>
+      *{padding: 0; margin: 0; box-sizing: border-box;}
+        header{
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            font-family: sans-serif;
+        }
+        nav{
+            width: 100%;
+            height: 100px;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo{
+            font-size: 2em;
+            letter-spacing: 2px;
+        }
+        .menu a{
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            position: relative;
+
+        }
+        .menu a:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid white;
+            transition: 0.4s linear;
+        }
+        .menu a:hover:before{
+            width: 100%;
+        }
+        .login {
+            text-decoration: none;
+            padding: 10px 20px;
+            color: white;
+            font-size: 20px;
+            background: brown; 
+            border-radius: 5px;
+            transition: 0.4s;
+        }
+        .login a{
+            color:white;
+            text-decoration: none;
+        }
+        .login :hover{
+            background: transparent;
+            border: 1px solid indianred;
+        }       
+         .footer {
+            position: fixed;
+            right: 2%;
+            bottom: 0;
+            color: white;
+            text-align: center;
+         }
+=======
     <style>
       body{
         background-image: url("../img/backgroundimg.jpg");
@@ -122,32 +189,86 @@
       background-color: grey; 
       margin: 2px;
       }
+>>>>>>> 5f922ce27423aa9d23c0c436976ac8bbf443634c
      .contact{
       font-size: 50px;
-      text-align:center;
-      
+      text-align: center;
+      color: blanchedalmond;
+      box-shadow: 0px 0px 10px gray;
      }
-     .photo{height: 200px;
+     .main{
+    background-color: #13053a;
+        margin:10px;
+     }
+     .photo{height: 600px;
     }
+<<<<<<< HEAD
+     .division{ height:450px;
+      width: 700px;
+      box-shadow:10px 10px 10px 10px gray;
+      display: flex;
+      flex-direction: row;
+      border: 4px solid rgb(19, 6, 6);
+      border-radius: 5px;
+=======
      .division{ height: 500px;
       width: 100px;
       display: flex;
       flex-direction: row;
       border: 2px solid black;
       margin-top: 100px;
+>>>>>>> 6b9a36242b1edb199db8fc167da730298730b329
      }
      .main form{ display: flex;
      flex-direction: column;
      padding-left: 20px;
-     padding-top: 100px;
+     padding-top: 90px;
      padding-bottom: 80px;
       justify-content: space-around;}
      .form{ text-align: center;
-      border-color:2px solid black;
+      box-shadow:5px;
       font-size:15px;
     border-radius: 10px;}
+    .icon{
+         height:20px;
+         width:150px;
+         border-radius: 5px;
+         padding-left:50px ;
+    }
     </style>
 </head>
+<<<<<<< HEAD
+<body class="main">
+ <nav>
+    <div class="logo">
+        <h5><b>Lens co.</b></h5>
+    </div>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Explore</a>
+        <a href="#">Portfolio</a>
+        <a href="#">About Us</a>
+        <a href="#">Location</a>
+        <a href="#">Contact</na>
+    </div>
+    <div class="login">
+        <a href="#">LOGIN</a>
+    </div>
+    <div class="footer">
+        <p>Design by &copy G-14 ICP6.0</p>
+      </div>
+</nav>
+<h1 class="contact">contact us</h1>
+  <div class="division">
+   <img src="../img/photo.jpg"/>
+   <form class="main form">
+    <input type="text" placeholder="Enter your Name" class="form"/>
+    <input type="email" placeholder="Enter Your E-mail" class="form"/>
+    <input type="password" placeholder="Enter Your password" class="form"/>
+    <button class="form">contact us</button>
+    <img src="../img/icon.jpg"class="icon"/>
+   </form> </div> 
+=======
 <div class="main-menu">
   <div class="menu-container">
     <a href="index.html" class="menus" target="_blank">HOME</a>
@@ -176,5 +297,6 @@
        <input type="password" placeholder="Enter Your password" class="form"/>
       </form> </div>
    
+>>>>>>> 6b9a36242b1edb199db8fc167da730298730b329
 </body>
 </html>

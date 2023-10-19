@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="theme.css">
     <style>
       body{
-        background-image: url("../img/backgroundimg.jpg");
+        background-image: url(../img/backgroundimg.jpg);
         background-position: 0px ;
   background-size: 100% 100%;
   height:220vh;
@@ -43,7 +43,7 @@
             text-transform: uppercase;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            color: #fff ;
+            color: #fff ; margin-right: 100px;
           }
 
         
@@ -81,7 +81,7 @@
   overflow: hidden;
  
 }
-.dropdown .dropbtn {
+.dropbtn {
   font-weight: 10px;
   width:60px;
   margin-top: 15px;
@@ -160,6 +160,8 @@ position: absolute;
             padding: auto;
         }
 
+
+
  .card-btn{
      font-weight: bold;
      border-radius: 20px;
@@ -179,6 +181,7 @@ position: absolute;
       box-shadow: 0 0 15px 4px white ;
 
 
+
      }
 
      .card{
@@ -194,15 +197,22 @@ position: absolute;
           font-style: italic;
         }
 
+        .card-title:hover{
+          color: #f7f5f5;
+          cursor: pointer ;
+          font-weight: bold;
+        }
+
 
 </style>
 </head>
 <body> 
+    
+    
+  <div class="main-menu">
     <div class="Logo">
       PicsNow
     </div>
-    
-  <div class="main-menu">
 <div class="menu-container">
   <a href="../index.html" class="menus" target="_blank">HOME</a>
    <a href="./about.html"  class="menus" target="_blank">ABOUT US</a>
@@ -217,7 +227,7 @@ position: absolute;
     <div class="dropdown-content">
       <a href="wild-life.html" target="_blank">Wild-life photography</a>
       <a href="model.html" target="_blank">model photoshootes</a>
-      <a href="exibition.html" target="_blank">Exhibition</a>
+      <a href="exibition.html" target="_blank" >Exhibition</a>
     </div>
   </div>
 
@@ -235,7 +245,8 @@ position: absolute;
    <div class="card">
     <img src="../img/christain wedding card 2.jpg" class="card-img">
     <p class="card-title">Christain</p>
-    <button class="card-btn">Click here</button>
+
+    <button class="card-btn" >Click here</button>
    </div>
 
    <div class="card">
@@ -279,6 +290,224 @@ position: absolute;
   <p class="card-title">Jain</p>
   <button class="card-btn">Click here</button>
 </div> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footer</title>
+<style>
+    .abc{
+        padding: 0;
+        margin: 0;
 
+    }
+    .footer{
+        position: fixed;
+        bottom: 0;
+    }
+    .footer-distributed{
+        background-color: #2d3a2d;
+        box-sizing: border-box;
+        width:  100%;
+        text-align: left;
+        font: bold 16px;
+        padding: 50px 50px 60px 50px;
+        margin-top: 80px;
+    }
+     .footer-distributed,.footer-left.footer-distributed,.footer-center.footer-distributed,.footer-right{
+        display: inline-block;
+        vertical-align: top;
+    }
+    .footer-left{
+         width: 30%;
+    }
+    .footer-logo{
+      color: aqua;
+    }
+    .footer-distributed h3{
+        color: #ffff;
+        font: normal 36px;
+        margin: 0;
+    }
+    .footer-distributed h3 span{
+        color: #e0ac1c;
+    }
+    .footer-links{
+        color: #fff;
+        margin: 20px 0 12px;
+    }
+    .footer-links a{
+        display: inline-block;
+        line-height: 1.8;
+        text-decoration: none;
+        color: inherit;
+    }
+     .footer-c-name{
+        color: #8f9296;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+    }
+     .footer-center{
+        width: 35%;
+    }
+    .footer-center i{
+        background-color: #33383b;
+        color: #ffff;
+        font-size: 25px;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 42px;
+        margin: 10px 15px;
+        vertical-align: middle;
+    }
+    .footer-center i.fa-envelop{
+        font-size: 17px;
+        line-height: 38px;
+    }
+    .footer-center p{
+        display: inline-block;
+        color: #ffff;
+        vertical-align: middle;
+        margin: 0;
+    }
+     .footer-center p span{
+        display:block;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 2;
+    }
+     .footer-center p a{
+        color:#e0ac1c;
+        text-decoration: none;
+    }
+    .footer-right{
+        width: 30px;
+    }
+    .footer-c-about{
+        max-width: 500px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 14px;
+        color: #cacdd2;
+    }
+     .footer-c-about span{
+        display: block;
+        color: #ffff;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .footer-icons li{
+        margin:0 10px;
+    }
+    .footer-icons{
+        list-style: none;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+         margin:1rem 0rem;
+    }
+    .footer-icons a{
+        text-decoration: none;
+        color: #fff;
+        border: 1.1px solid white;
+        padding: 5px;
+        border-radius: 50%;
+    }
+    .footer-icons a i{
+         font-size: 1.1rem;
+         width: 20px;
+         transition: color .4s ease;
+    }
+
+      .footer-icons a:hover i{
+         color:aqua;
+     }
+     .footer-links a:hover{
+        color:aqua;
+     }
+
+
+    @media only screen and (max-height:800px) {
+        .footer{
+            position: static;
+        }
+        .header{
+            padding-top: 40px;
+        }
+    }
+    @media only screen and (max-height:800px) {
+         .footer-distributed,.footer-links.footer-distributed,.footer-center.footer-distributed,.footer-right{
+            display: flex;
+            width: 100%;
+            margin-bottom: 40px;
+           text-align: center;
+    }
+       .footer-center i{
+        width: 30px;
+    }
+    }
+
+        
+    
+</style>
+
+</head>
+<body>
+   <header>
+
+   </header> 
+   <footer class="footer-distributed">
+    <div class="footer-left">
+        <h1 class="footer-logo">wedding photoshootes</h1>
+        <p class="footer-links">
+            <a href="../index.html">Home</a>
+            |
+            <a href="../pages/about.html">about </a>
+            |
+            <a href="../pages/contact.html">contact </a>
+            |
+            <a href="../model.html">Model</a>
+        </p>
+        <p class="footer-c-name">copyright 2023 <strong>wedding photoshootes</strong>
+        all rights reversed</p>
+    </div>
+    <div class="footer-center">
+            <div>
+           <i class="fa-solid fa-location-dot"></i>
+           <p><span>Rahuri </span>Factory</p>
+        </div>
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+98*768767*</p>
+
+        </div>
+        <div>
+            <i class="fa-solid fa-envelope"></i>
+            <p><a href="#">suyashssagalgile543@gmail.com</a></p>
+        </div>
+    </div>
+
+        <div class="footer-right">
+            <p class="footer-c-about">
+                <span>About us</span>
+                <strong>wedding photoshootes</strong>We offer catering services for any kind of event!<br/>Contact us to bright photoshoots
+            <br/>
+            <ul class="footer-icons">
+              <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              <li> <a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li> <a href=""><i class="fa-brands fa-instagram"></i></a></li>
+              <li> <a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+               <li> <a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div>
+   </footer>
+
+   <script src="https://kit.fontawesome.com/90fb78d75b.js" crossorigin="anonymous"></script>
 </body>
 </html>
