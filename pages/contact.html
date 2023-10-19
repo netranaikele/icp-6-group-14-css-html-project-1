@@ -11,6 +11,113 @@
   height:220vh;
   margin: 0%;
     }
+    
+    .heading-main{
+    overflow: hidden;
+        margin-left:0;
+        margin-right: 0;
+        display:block;flex-wrap: wrap;
+        cursor: pointer;
+       
+        margin-top: 20px; display: block;
+    
+          }
+        .heading{ 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          font-weight: bolder;
+            font-size: 60px;
+            text-align:center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+            border: 1px double aqua ;
+       -webkit-text-fill-color:#80ced6; 
+      -webkit-text-stroke-width: 3px;
+      -webkit-text-stroke-color:  black;
+      filter: drop-shadow( 5px 5px 11px rgb(243, 243, 240));
+     
+            
+           
+        }
+    .main-menu{
+      display:flex;justify-content:start;flex-wrap: wrap;
+     background-color: #03373c;
+      height:55px; box-shadow:1px 1px 10px #010006; 
+    }
+    .menus{
+      color:#dbe3e7;
+    background-color:#00394d ;
+      margin: 20px;
+      padding: 5px;
+      border:2px solid cadetblue;
+      width:60px;
+      border-radius:6px ;
+      font-weight: 10px;
+     font-family:fantasy;
+    }
+    .menus:hover{
+      background-color:  #190b62;
+      cursor: pointer;color: #dbe3e7;
+      box-shadow:1px 1px 5px #e6cee9 ,1px 1px 5px #044349;
+      border:1px double  #c8c3cc ;
+      transition: 0.4s linear; 
+    }
+    .menu-container{
+      margin:22px;
+      
+    }
+    .dropdown {
+      float: left;
+      padding:5px;
+      overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+      font-weight: 14px;
+      width:60px;height:33px ;
+      font-family:fantasy;
+      border-radius: 6px;
+      border: 2px solid cadetblue;
+      color:#dbe3e7;
+      padding: 5px;
+      background-color:#00394d; 
+      margin: 8px;
+      margin-right: 70px;
+      margin-bottom: 0px;margin-top: 9.8px;
+    }
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color:  #190b62;
+      cursor: pointer;color: #dbe3e7;
+      box-shadow:1px 1px 5px #e6cee9 ,1px 1px 5px #044349;
+      border:1px double  #c8c3cc ;
+      transition: 0.4s linear;
+      ;
+    }
+    .dropdown-content {
+      display: none;
+      background-color:#035f81;
+    
+    position:relative;
+      box-shadow: 1px 1px 10px #e6cee9 ,1px 1px 10px #03373c;
+     
+    }
+    .dropdown-content a {
+      float:none;
+      color: #010513;
+      padding:5px;
+      text-decoration: none;
+      display: block;
+      z-index: 9;
+      border: 2px solid rgb(7, 4, 0);
+      text-align: left;
+    border-radius:8px ;
+    }
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+    .dropdown:hover .dropdown-content {
+      display:block;
+    }
       .main{ 
       background-color: grey; 
       margin: 2px;
@@ -23,10 +130,11 @@
      .photo{height: 200px;
     }
      .division{ height: 500px;
-      width: 800px;
+      width: 100px;
       display: flex;
       flex-direction: row;
       border: 2px solid black;
+      margin-top: 100px;
      }
      .main form{ display: flex;
      flex-direction: column;
@@ -40,15 +148,33 @@
     border-radius: 10px;}
     </style>
 </head>
-<body class="main">
-   <h1 class="contact" >contact us</h1>
-  <div class="division"> <img src="photo.jpg" />
-   <form class="main form">
-    <input type="text" placeholder="Enter your Name" class="form"/>
-    <input type="email" placeholder="Enter Your E-mail" class="form"/>
-    <input type="password" placeholder="Enter Your password" class="form"/>
-    <button class="form">contact us</button>
-   </form> </div>
+<div class="main-menu">
+  <div class="menu-container">
+    <a href="index.html" class="menus" target="_blank">HOME</a>
+     <a href="about.html"  class="menus" target="_blank">ABOUT US</a>
+     <a href="wedding.html"  class="menus" target="_blank">NEXT</a>
+     </div>
+     <div class="dropdown">
+      <button class="dropbtn">EXPLORE
+      </button>
+      <div class="dropdown-content">
+        <a href="wedding.html" target="_blank">wedding photoshootes</a>
+        <a href="model.html" target="_blank">model photoshootes</a>
+        <a href="contact.html" target="_blank">contact us</a>
+      </div>
+    </div>
+    <div class="heading-main">
+      <h1 class="heading"> CONTACT US</h1>
+      </div>
+    </div>
+    <body class="main">
+
+     <div class="division"> <img src="../img/photo.jpg" />
+      <form class="main form">
+       <input type="text" placeholder="Enter your Name" class="form"/>
+       <input type="email" placeholder="Enter Your E-mail" class="form"/>
+       <input type="password" placeholder="Enter Your password" class="form"/>
+      </form> </div>
    
 </body>
 </html>
