@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="theme.css">
      <style>
 
+
+        body{
+        background-image: url("../img/backgroundimg.jpg");
+        background-position: 0%;
+        background-size: 100% 100%;
+        height: 100vh;
+        margin: 0%;
+       }
+
 body{
             background-image: url("../img/black image.jpeg");
             background-position:center;
@@ -16,8 +25,9 @@ body{
             margin:0%;
         }
 
+
         
-        .main-menu{
+       .main-menu{
             display:flex;justify-content:end;flex-wrap: wrap;
             background-image:linear-gradient(to left,#080342, #032644);
             height:50px;
@@ -65,7 +75,7 @@ body{
             position: absolute;
         }
 
-        .dropdown-content a {
+        .dropdown-content a{
            float:none;
            color: #dbe3e7;;
            padding:22px;
@@ -77,8 +87,9 @@ body{
         
         .btn:hover{
             border-radius: 50px;
-            background-color: rgba(75, 174, 13, 0.712);
+            background-color:burlywood;
             box-shadow: 0 0 10px 3px rgb(244, 246, 246);
+            transition-duration: 0.5s;
 
         }
 
@@ -87,7 +98,7 @@ body{
         }
 
         .dropdown-content a:hover {
-            background-color: #ddd;
+            background-color:whitesmoke;
             cursor: pointer;
         }
         
@@ -96,7 +107,7 @@ body{
             flex-direction: column;
             flex-wrap: wrap;
             cursor: pointer;
-            
+
         }    
 
 
@@ -111,33 +122,37 @@ body{
      }
 
      .welcome-name{
-      font-size: 150px;
-      color:whitesmoke;
+      font-size: 140px;
+      color:rgb(235, 193, 193);
       font-style: italic;
-      margin-top: 30PX;
+      margin-top: 10PX;
       text-align: center;
 
      }
+      .welcome-name:hover{
+        text-shadow: 0px 0px 13px 10px black ;
+      }
 
      .team-name-title{
-      font-size: 80px;
+      font-size: 50px;
       color:whitesmoke;
       font-style: italic;
       margin-top:10px;
       text-align:start;
-      margin-left: 50px;
+      margin-left: 30px;
+     
      }
      
     
       .item {
         height: 530px;
         width: 330px;
-        background-color: #f77e9e;
+        background-color: #96049b;
         margin: 10px;
         font-size: 50px;
         padding: 10px;
         border-radius: 50px;
-        border: 10px tomato;
+        border: 10px whitesmoke;
         
       }
 
@@ -169,6 +184,7 @@ body{
        margin: 00;
        margin-bottom: 10px;
       }
+
       .hii-name{
         text-align: center;
         margin: 0%;
@@ -184,28 +200,37 @@ body{
       }
 
       .logo{
-        height: 600px;
-        width: 600px;
-        margin-top: 00;
-        margin-left: 100px;
+        height: 400px;
+        width: 400px;
+        margin-top: 20px;
+        margin-left: 80px;
         border-radius: 2000px;
-        margin-bottom: 100px;
-        cursor: cell;
+        margin-bottom: 50px;
+        cursor:cell;
+        position: r;
       }
+      .logo-name{
+        font-size: 30px;
+        color: whitesmoke;
+        font-style: italic;
+        margin-left: 20px;
+        
+      }
+
       .item:hover{
         height: 535px;
         width: 335px;
         box-shadow: 0px 0px 13px 10px beige;
         cursor: grab;
-        transition-duration: 0.6s;
+        transition-duration: 0.8s;
       }
 
       .logo:hover{
         box-shadow: 0px 0px 13px 10px white;
         cursor: grab;
         transition-duration: 1s;
-        height: 650px;
-        width: 650px;
+        height: 550px;
+        width: 550px;
 
       }
       .group-leader-name{
@@ -229,26 +254,22 @@ body{
         margin-bottom: 20px;
 
       }
-
-</style>
-=======
-    <title>FORM</title>
-    <link rel="stylesheet" href="S.css" type="text/css">
-    <script src="J.js"></script>
-    <style>
+      
+      
+    
+      .children-image{
+        width: 30px;
+        height: 40px;
+      }
+      
       *{
     margin: 0;
     padding: 0;
 }
-body{
-    background-image: url("pic1.jpg");
-    background-position: center;
-    background-size: cover;
-    
-}
+
 div.main{
     width: 450px;
-    margin: 100px auto 0px auto;
+    margin: 150px auto 50px auto;
 
 }
 h2{
@@ -266,6 +287,7 @@ div.register{
 }
 form#register{
     margin: 40px;
+    
 }
 label{
     font-family: 'Times New Roman', Times, serif;
@@ -278,9 +300,11 @@ input#submit{
     font-family: sans-serif;
     border-radius: 10px;
     background-color: #FFB74D ;
-    margin-bottom: 20px;
+    margin-top: 30px;
     position: center;
 }
+
+  <style>
 .dropdown-content a {
   float:none;
   color: #021119;;
@@ -291,13 +315,10 @@ input#submit{
   text-align: left;
 }   
     </style>
-<<<<<<< HEAD
-</head>
-=======
->>>>>>> f43e62c32739920e66b2a1dd4968dd1e0ff44326
 
 </head>
-<<<<<<< HEAD
+</head>
+
 <body> 
   <div>
     <div class="main-menu">
@@ -317,23 +338,24 @@ input#submit{
       </div>
 
 
+
       <h1 class="welcome-name">Welcome To Photoshop .</h1>
       <br>
       <div>
+        <p class="logo-name">LOGO:-</p>
         <img src="../img/logo-2.jpg" class="logo"/>
+       
       </div>
+
+      
       
 
       <h1 class="team-name-title">Our Dedicated Team :-</h1>
 
-
-
-
-
       <div class="item-container">
 
         <div class="item">
-          <p class="student-name">Netra Kale.</p>
+          <p class="student-name">Netra Kale.👧</p>
           <img src="../img/netra pic.png"  class="item-image"/>
           <p class="hii-name">hii!</p>
           <p class="discription"> My name is netra i am currenctly persuing my undergraduate course in BCA from gh raisoni Nagpur</p>
@@ -341,8 +363,8 @@ input#submit{
           </div>
 
         <div class="item">
-          <p class="student-name"> Suyash Sagalgile .</p>
-          <img src="../my image.jpg"  class="item-image"/>
+          <p class="student-name"> Suyash Sagalgile.👦</p>
+          <img src="../img/suyesh.png"  class="item-image"/>
           <p class="hii-name">hii!</p>
           <p class="discription">I'm Suyash Sagalgile,now I'm recently studying BCS computer science
             From Rajashri shahu college deolali pravara,Ahmednagar</p>
@@ -350,7 +372,7 @@ input#submit{
         </div>
 
         <div class="item">
-          <p class="student-name">Sanket Jadhav.</p>
+          <p class="student-name">Sanket Jadhav.👦</p>
           <img src="../img/personal.jpg"  class="item-image"/>
           <p class="hii-name">hii!</p>
           <p class="discription">i'm Sanket jadhav,cuurently pursuing 3rd year IT Engineering from JSPM , Pune.</p>
@@ -363,24 +385,24 @@ input#submit{
       <div class="item-container">
 
         <div class="item">
-          <p class="student-name">Pranali Devtare.</p>
-          <img src="../img/pranali image.png"  class="item-image"/>
+          <p class="student-name">Pranali Devtare.👧</p>
+          <img src="../img/pranali.jpg"  class="item-image"/>
           <p class="hii-name">hii!</p>
           <p class="discription">I am pranali Devtarse from sonai shanishingnapur. 
             I am currently pursuing Sy. Bca from Arts,Commerce and Science college sonai</p>
         </div>
 
         <div class="item">
-          <p class="student-name"> Anuja sardar .</p>
-          <img src="../my image.jpg"  class="item-image"/>
+          <p class="student-name"> Anuja sardar.👧</p>
+          <img src="../img/my image.jpg"  class="item-image"/>
           <p class="hii-name">hii!</p>
           <p class="discription">My name is Anuja sardar 
             I am stuying B-tech in PCE nagpur</p>
         </div>
 
         <div class="item">
-          <p class="student-name">Nikita Dale.</p>
-          <img src="../my image.jpg"  class="item-image"/>
+          <p class="student-name">Nikita Dale.👧</p>
+          <img src="../img/priti.jpg"  class="item-image"/>
           <p class="hii-name">hii!</p>
           <p class="discription">I am Nikita dale and  I am from rahuri factory.
             I am currently pursuing Sy.bca from rajarshi sahu mahavidyalay , deolali pravara</p>
@@ -392,31 +414,29 @@ input#submit{
       <div class="item-container">
 
         <div class="item">
-          <p class="student-name"> Saurabh Gosavi</p>
+          <p class="student-name"> Saurabh Gosavi.👦</p>
           <img src="../my image.jpg"  class="item-image"/>
           <p class="hii-name">hii!</p>
-          <p class="discription">I'm Saurabh Gosavi and I am from Shrirampur. I'm Studying in T.Y.BCS From R.B.N.B. College .Shrirampur.</p>
+          <p class="discription">I'm Saurabh Gosavi and I am from Shrirampur. I'm Studying in T.Y.BCS From R.B.N.B. College .Shrirampur.</p>
         </div>
 
         <div class="item">
-          <p class="student-name">Vaidehi Vaishnav .</p>
+          <p class="student-name">Vaidehi Vaishnav.👧</p>
           <img src="../my image.jpg"  class="item-image"/>
           <p class="hii-name">hii!</p>
-          <p class="discription">Hello everyone! I'mHello everyone! I'm Vaidehi Vaishnav and Currently I'm pursuing my Btech degree from GHRCE, NAGPUR. and Currently I'm pursuing my Btech degree from GHRCE, NAGPUR.</p>
+          <p class="discription">Hello everyone! I'mHello everyone! I'm Vaidehi Vaishnav and Currently I'm pursuing my Btech degree from GHRCE, NAGPUR.</p>
         </div>
 
         <div class="item">
-          <p class="student-name">Sidhaart.</p>
+          <p class="student-name">Sidhaart.👦</p>
           <img src="../my image.jpg"  class="item-image"/>
           <p class="hii-name">hii!</p>
           <p class="discription">My name is Sidhhart am currenctly persuing my undergraduate course.</p>
         </div>
 
-        </div>
-    
-=======
+      </div>
 
->>>>>>> cff29d51af958cdcb3b2f621de400c70cd2d993a
+
 <body>
     <div class="main">
         <div  class="register">
@@ -450,6 +470,5 @@ input#submit{
             </form>
         </div>
     </div>
->>>>>>> f43e62c32739920e66b2a1dd4968dd1e0ff44326
 </body>
 </html>
