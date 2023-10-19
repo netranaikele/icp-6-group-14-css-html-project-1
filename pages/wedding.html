@@ -7,12 +7,12 @@
   <link rel="stylesheet" href="theme.css">
     <style>
       body{
-      background-image: url("../img/wedding\ image.jpg");
-      background-position: 0px ;
-      background-size: 100% 100%;
-      height:190vh;
-      margin: 0%;
-     }
+        background-image: url("../img/backgroundimg.jpg");
+        background-position: 0px ;
+  background-size: 100% 100%;
+  height:220vh;
+  margin: 0%;
+    }
       .heading-main{
       overflow: hidden;
       margin-left: auto;
@@ -30,9 +30,21 @@
         margin-top: 0%;
         border:8px double white;
         border-radius: 30px;
+        text-align: center;
         -webkit-text-fill-color:#00394d; 
         -webkit-text-stroke: 2px rgb(133, 217, 219);
       }
+
+      .Logo{
+            font-size: 2.1em;
+            letter-spacing: 2px;
+            background: linear-gradient(90deg,#00dbde,#fc00ff);
+            font-size: poppins;
+            text-transform: uppercase;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: #fff ;
+          }
 
         
     .main-menu{
@@ -112,7 +124,11 @@ position: absolute;
 
 .description{
     color: #fff;
-    margin-left: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
 }
 .dropdown-content a:hover {
   background-color: #ddd;
@@ -128,24 +144,69 @@ position: absolute;
   margin-left: 100px;
   margin-top: 90px;
   filter: drop-shadow( 5px 5px 11px black);
-
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.head{
-  margin-top: 0%;
-}
-    .cards{
 
-    }
-    </style>
+    .head{
+  margin-top: 0%;
+  }
+          .card-img{
+            height: 350px;
+            width: 350px;
+            border-radius: 20px;
+            display: block;
+            justify-content: center;
+            margin: 10px;
+            padding: auto;
+        }
+
+ .card-btn{
+     font-weight: bold;
+     border-radius: 20px;
+     padding: 5px 25px;
+     border-color: #fff;
+     color: #fff;
+     background-color: #00425a;
+     margin-left:100px ;
+     text-align: center;
+     margin-top: 10px;
+     font-size: 15px;
+     cursor: pointer;
+     }
+
+     .card-btn:hover{
+      border-radius: 10px;
+      box-shadow: 0 0 15px 4px white ;
+
+
+     }
+
+     .card{
+      margin-top: 150px;
+     }
+     .card-img:hover{
+            box-shadow: 0 0 15px 4px white ;
+        }
+
+        .card-title{
+          color: #f5f505;
+          font-size: 40px;
+          font-style: italic;
+        }
+
+
+</style>
 </head>
 <body> 
-
+    <div class="Logo">
+      PicsNow
+    </div>
+    
   <div class="main-menu">
 <div class="menu-container">
-  <a href="main.html" class="menus" target="_blank">HOME</a>
-   <a href="about.html"  class="menus" target="_blank">ABOUT US</a>
-   <a href="wedding.html"  class="menus" target="_blank">NEXT</a>
+  <a href="../index.html" class="menus" target="_blank">HOME</a>
+   <a href="./about.html"  class="menus" target="_blank">ABOUT US</a>
+   <a href="contact.html"  class="menus" target="_blank">NEXT</a>
    </div>
 
    <div class="dropdown">
@@ -154,27 +215,70 @@ position: absolute;
     </button>
 
     <div class="dropdown-content">
-      <a href="wedding.html" target="_blank">Wild-life photography</a>
+      <a href="wild-life.html" target="_blank">Wild-life photography</a>
       <a href="model.html" target="_blank">model photoshootes</a>
-      <a href="contact.html" target="_blank">contact us</a>
+      <a href="exibition.html" target="_blank">Exhibition</a>
     </div>
-  </div>
   </div>
 
    <div class="heading-main">
    <div>
     <h1 class="heading">🤵🏻Wedding Photography👰🏻</h1>
    </div>
+
    <h1 class="heading-name">Wedding page </h1>
    <p class="description">
     🙏🏻Thanks for visiting our little corner of the web. We hope you’ll join us on [Date] at [Venue]<br> to help celebrate our big day! 
    </p>
+   </div>
 
-   <div class="card-slotes">
-<div class="cards">
-</div>  
-</div>
-  
+   <div class="card">
+    <img src="../img/christain wedding card 2.jpg" class="card-img">
+    <p class="card-title">Christain</p>
+    <button class="card-btn">Click here</button>
+   </div>
+
+   <div class="card">
+       <img src="../img/southindian wedding card1.jpg" class="card-img">
+       <p class="card-title">South-Indian</p>
+       <button class="card-btn">Click here</button>
+      </div>
+
+    <div class="card">
+       <img src="../img/punjabi wedding card 4.webp" class="card-img">
+       <p class="card-title">Punjabi</p>
+       <button class="card-btn">Click here</button>
+    </div>  
+
+    <div class="card">
+       <img src="../img/muslim wedding card 3.jpg" class="card-img">
+       <p class="card-title">Muslim</p>
+       <button class="card-btn">Click here</button>
+    </div> 
+
+    <div class="card">
+      <img src="../img/gujarati wedding card.webp" class="card-img">
+      <p class="card-title">Gujarati</p>
+     <button class="card-btn">Click here</button>
+   </div> 
+
+   <div class="card">
+    <img src="../img/parsi wedding card.jpg" class="card-img">
+    <p class="card-title">Parsi</p>
+    <button class="card-btn">Click here</button>
+ </div> 
+
+  <div class="card">
+  <img src="../img/bihari wedding card.jpeg" class="card-img">
+  <p class="card-title">Bihari</p>
+  <button class="card-btn">Click here</button>
+</div> 
+
+<div class="card">
+  <img src="../img/jain wedding card.webp" class="card-img">
+  <p class="card-title">Jain</p>
+  <button class="card-btn">Click here</button>
+</div> 
 
 </body>
 </html>
