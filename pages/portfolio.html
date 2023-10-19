@@ -43,7 +43,7 @@
             margin: 40px 40px;
             cursor: pointer;
         }
-
+        
         .card-img{
             height: 350px;
             width: 350px;
@@ -153,6 +153,14 @@
 
         .card:hover{
             box-shadow: 0 0 15px 4px white ;
+            height: 350px;
+            width: 370px;
+            transition: 0.5s;
+        }
+
+        .card-img:hover{
+            width:370px;
+            transition: 0.5s;
         }
 
         
@@ -186,6 +194,153 @@
             cursor: pointer;
             box-shadow: 0 0 10px 3px white;
         }
+
+        @media screen and (max-width:600px){
+
+            .navbar{
+            font-weight:normal;
+            font-size: 55px;
+            margin: 10px 100px;
+            border-radius: 30px;
+           
+        }
+
+        .logo{
+           font-size: 30px;
+           margin-right: 700px;
+           color: #fc00ff;
+           font-weight: bold;
+           margin-bottom: 50px;
+
+        }
+
+        .card{
+            height: 350px;
+            width: 350px;
+            background-color: bisque;
+            border-radius: 20px;
+            border: 2px solid white;
+            display: inline-block;
+            margin: 40px 40px;
+            cursor: pointer;
+        }
+
+        .btn{
+            width:60px;
+            height: 25px;
+            padding: 3px;
+            margin: -135px 0px;
+            font-weight: 10px;
+            margin-right: 10px;
+            margin-left: 10px;
+           
+        }
+
+        .dropbtn {
+            font-weight: 20px;
+            width:75px;
+            height: 37px;
+            padding: 3px;
+            border-radius: 6px;
+            margin: -135px 10px;
+            font-size: 20px;
+            text-align: center;
+           
+        }      
+        
+
+        .p-card{
+            background-color: rgb(251, 253, 91);
+            color:#00394d;
+            border: 3px solid whitesmoke;
+            border-radius: 10px;
+            height: 60px;
+            width: 500px;
+            margin-left: 5px;
+            margin-right: 20px;
+           margin-bottom: 20px;
+           padding-bottom: 25px;
+        
+        }
+     
+    }
+
+        @media screen and (min-width:601px) and (max-width:800px){
+            .navbar{
+            font-weight:normal;
+            font-size: 50px;
+            margin: 10px 100px;
+            border-radius: 30px;
+           
+        }
+
+        .card{
+            height: 280px;
+            width: 280px;
+            background-color: bisque;
+            border-radius: 20px;
+            border: 2px solid white;
+            display: inline-block;
+            margin: 10px 10px;
+            cursor: pointer;
+        }
+
+        .card-img{
+            height: 280px;
+            width: 280px;
+            border-radius: 20px;
+        }
+
+        .logo{
+           font-size: 30px;
+           margin-right: 520px;
+           color: #fc00ff;
+           font-weight: bold;
+           margin-bottom: 50px;
+
+        }
+
+
+        .btn{
+            width:60px;
+            height: 25px;
+            padding: 3px;
+            margin: -120px 0px;
+            font-weight: 10px;
+            margin-right:15px;
+            margin-left: 44px;
+           
+        }
+
+        .dropbtn {
+            font-weight: 20px;
+            width:75px;
+            height: 37px;
+            padding: 3px;
+            border-radius: 6px;
+            margin: -120px 10px;
+            font-size: 20px;
+            text-align: center;
+           
+        }  
+        
+        .p-card{
+            background-color: rgb(251, 253, 91);
+            color:#00394d;
+            border: 3px solid whitesmoke;
+            border-radius: 10px;
+            height: 70px;
+            width: 650px;
+            margin-left: 5px;
+            margin-right: 20px;
+           margin-bottom: 20px;
+           padding-bottom: 25px;
+        
+        }
+           
+        }
+
+        
     </style>    
 </head>
 <body>
@@ -196,17 +351,20 @@
     <a href="about.html"  class="btn" target="_blank">ABOUT</a>
     <a href="wedding.html"  class="btn" target="_blank">NEXT</a> 
 
-      <div class="dropdown">
-        <button class="dropbtn">EXPLORE</button>
-        
-        <div class="dropdown-content">
-          <a href="wedding.html" target="_blank">wedding photoshootes</a>
-          <a href="model.html" target="_blank">model photoshootes</a>
-          <a href="contact.html" target="_blank">contact us</a>
-        </div>
+   
+    </div>
 
+    <div class="dropdown">
+        <button class="dropbtn">EXPLORE</button>
+    
+        <div class="dropdown-content">
+           
+            <a href="wedding.html" target="_blank">wedding photoshootes</a>
+            <a href="model.html" target="_blank">model photoshootes</a>
+            <a href="contact.html" target="_blank">contact us</a>
+          </div>
       </div>
-      </div>
+      
 
     <h1 class="navbar">Photo Gallary</h1>
 
