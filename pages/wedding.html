@@ -3,88 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding page</title>
+    <title>wild-life-photography</title>
   <link rel="stylesheet" href="theme.css">
+
     <style>
       body{
-        background-image: url("../img/backgroundimg.jpg");
-        background-position: 0px ;
-  background-size: 100% 100%;
-  height:220vh;
-  margin: 0%;
-    }
-      .heading-main{
-      overflow: hidden;
-      margin-left: auto;
-      margin-right: auto;
+      background-image: url("../img/backgroundimg.jpg");
+      background-position: 0px ;
+background-size: 100% 100%;
+height:220vh;
+margin: 0%;
       }
-    
-      .heading{  
-        font-family:sans-serif;
-        color: #f4db79;
-        font-weight: bolder;
+      .Logo{
+        font-width: 20px;
+        letter-spacing: 2px;
+       background: linear-gradient(90deg,#00dbde,#fc00ff);
+        font-size: poppins;
+        text-transform: uppercase;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: #fff ;
+      }
+.heading-main{
+overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    display:inline-flexbox;flex-wrap: wrap;
+    cursor: pointer;
+    margin-top: 20px; display: block;
+
+      }
+    .heading{ 
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: bolder;
         font-size: 60px;
         text-align:center;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 0%;
-        border:8px double white;
-        border-radius: 30px;
-        text-align: center;
-        -webkit-text-fill-color:#00394d; 
-        -webkit-text-stroke: 2px rgb(133, 217, 219);
-      }
-
-      .Logo{
-            font-size: 2.1em;
-            letter-spacing: 2px;
-            background: linear-gradient(90deg,#00dbde,#fc00ff);
-            font-size: poppins;
-            text-transform: uppercase;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            color: #fff ; margin-right: 100px;
-          }
-
+        margin-top: 10px;
+        border: 1px double aqua ;
+   -webkit-text-fill-color:#80ced6; 
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color:  black;
+  filter: drop-shadow( 5px 5px 11px rgb(243, 243, 240));
+ 
         
-    .main-menu{
-         display:flex;justify-content:end;flex-wrap: wrap;
-         background-image:  linear-gradient(to left,#000000,#000033);
-          height:50px;
+       
+    }
+.main-menu{
+  display:flex;justify-content:flex-end;flex-wrap: wrap;
+ background-color: #03373c;
+  height:55px; box-shadow:1px 1px 10px #010006; 
 }
 .menus{
   color:#dbe3e7;
-  background-color: #00394d ;
- margin: 20px;
+background-color:#00394d ;
+  margin: 20px;
   padding: 5px;
   border:2px solid cadetblue;
   width:60px;
   border-radius:6px ;
   font-weight: 10px;
  font-family:fantasy;
- position: relative;
+}
+.menus:hover{
+  background-color:  #190b62;
+  cursor: pointer;color: #dbe3e7;
+  box-shadow:1px 1px 5px #e6cee9 ,1px 1px 5px #044349;
+  border:1px double  #c8c3cc ;
+  transition: 0.4s linear; 
 }
 
-.menus:hover{
-    border-radius: 20px;
-  background-color:  #190b62;
-    box-shadow:1px 1px 5px #e6cee9 ,1px 1px 5px #044349;
-}
 .menu-container{
   margin:22px;
+  }
   
-}
 .dropdown {
   float: left;
   padding:5px;
-  
   overflow: hidden;
- 
 }
-.dropbtn {
-  font-weight: 10px;
-  width:60px;
-  margin-top: 15px;
+
+.dropdown .dropbtn {
+  font-weight: 14px;
+  width:60px;height:33px ;
   font-family:fantasy;
   border-radius: 6px;
   border: 2px solid cadetblue;
@@ -93,418 +95,557 @@
   background-color:#00394d; 
   margin: 8px;
   margin-right: 70px;
-  margin-bottom: 22px;
+  margin-bottom: 0px;margin-top: 9.8px;
 }
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color:  #190b62;
   cursor: pointer;color: #dbe3e7;
   box-shadow:1px 1px 5px #e6cee9 ,1px 1px 5px #044349;
   border:1px double  #c8c3cc ;
-  transition: 0.5s linear;
+  transition: 0.4s linear;
   ;
 }
 .dropdown-content {
   display: none;
-  background-color:#77a8a8;
-min-width: auto;
-position: absolute;
+  background-color:#035f81;
 
-  box-shadow: 1px 1px 10px #e2d5e3 ,1px 1px 10px #03373c;
+position:relative;
+  box-shadow: 1px 1px 10px #e6cee9 ,1px 1px 10px #03373c;
  
 }
 .dropdown-content a {
   float:none;
-  color: #021119;;
-  padding:22px;
+  color: #010513;
+  padding:5px;
   text-decoration: none;
   display: block;
-  z-index: 1;
+  z-index: 9;
+  border: 2px solid rgb(7, 4, 0);
   text-align: left;
-}
-
-.description{
-    color: #fff;
-    margin-left: 50px;
-    margin-right: 50px;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
+border-radius:8px ;
 }
 .dropdown-content a:hover {
   background-color: #ddd;
 }
 .dropdown:hover .dropdown-content {
-  display: block;
+  display:block;
 }
-.edit-options{
-  border:1px solid black;
-}
-.heading-name{margin-bottom: 29px;
-  color: red;opacity: 0.8;
-  margin-left: 100px;
-  margin-top: 90px;
+.text-photo{
+  color: rgb(250, 243, 243);
   filter: drop-shadow( 5px 5px 11px black);
+  margin:0%;
+  margin-left: 450px;
+  font-weight: bold;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
 }
 
-    .head{
-  margin-top: 0%;
-  }
-          .card-img{
-            height: 350px;
-            width: 350px;
-            border-radius: 20px;
-            display: block;
-            justify-content: center;
-            margin: 10px;
-            padding: auto;
-        }
-
-
- .card-btn{
-     font-weight: bold;
-     border-radius: 20px;
-     padding: 5px 25px;
-     border-color: #fff;
-     color: #fff;
-     background-color:#ff0ba1;
-     margin-left:100px ;
-     text-align: center;
-     margin-top: 10px;
-     font-size: 15px;
-     cursor: pointer;
-     }
-
-     .card-btn:hover{
-      border-radius: 10px;
-      box-shadow: 0 0 15px 4px #fff;
-      color: #f20808;
-
-    }
-
-     .cards{
+.birdpic{
+  height:450px;width:1261px;
+  margin-top:20px;
+  border-radius:2px;
+  position:relative;
+  border: 2px solid black;
+}
+.main-card-section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  margin-top: 30px;
+  cursor: pointer;
+  height: 400px;
+}
+    .cards{
       width:260px;
       border: 2px double rgb(3, 38, 58) ;
       height:400px;
       padding:10px;
       margin:20px;
       box-shadow: 1px 1px 30px rgba(93, 157, 240, 0.2),-1px -1px 10px rgb(1, 52, 81);
-     }
-
-     .card:hover{
-            box-shadow: 0 0 15px 4px white ;
-            border-radius: 10px;
-            background-color: #00dbde;
-            transition: 0.1s;
-        }
-
-
-     .card-img{
-            height: 350px;
-            width: 350px;
-            border-radius: 20px;
-        }
-
-    
-        .card-title{
-          color: #f5f505;
-          font-size: 40px;
-          font-style: italic;
-        }
-
-        .card-title:hover{
-          color: #f7f5f5;
-          cursor: pointer ;
-          font-weight: bold;
-        }
+     
+    }
+  
+   .card-image{
+      height:210px;
+      width: 205px;
+      display: block;
+      margin:5px auto;
+      margin-left: auto;
+      margin-right: auto; 
+      filter: drop-shadow(0px 0px 10px rgb(233, 233, 237) ) ;
+    }
+.cards:hover{
+  transition-duration: 0.4s;
+  opacity: 2;
+  background-color: #7a3b2e;
+  color:black;
+  border:2px groove  #622569;
+  border-radius: 10%;
+  box-shadow: 1px 1px 30px rgba(0, 9, 21, 0.2),-1px -1px 10px rgb(68, 2, 58);
 
 
-</style>
+  
+}
+
+.facts{
+color:violet;
+}
+.info{
+color:white;
+background-color: #010006;
+
+}
+.button{
+  color:#dbe3e7;
+background-color:#6dbdda ;
+  margin: 20px;
+  padding: 5px;
+  border:2px solid rgb(245, 246, 246);
+  width:80px;
+  border-radius:6px ;
+  font-weight: 10px;
+ font-family:fantasy;
+}
+.button:hover{
+  background-color:  #190b62;
+  cursor: pointer;color: #dbe3e7;
+  box-shadow:1px 1px 5px #e6cee9 ,1px 1px 5px #044349;
+  border:1px double  #c8c3cc ;
+  transition: 0.4s linear;
+}
+.card-image:hover{
+  border:1px solid lavenderblush;
+  border-radius:40%;
+}
+@media only screen and (max-width:600px){
+  .main-card-section{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  }
+ .birdpic{
+  height:300px;
+  width:550px;
+  margin-left:10px ;
+ }
+ .text-photo{
+display: block;
+margin-left: auto;
+margin-right: auto;
+ }
+ .cards{
+  width:500px;
+  border: 2px double rgb(3, 38, 58) ;
+  height:400px;
+  padding:5px;
+  margin:20px;
+  box-shadow: 1px 1px 30px rgba(93, 157, 240, 0.2),-1px -1px 10px rgb(1, 52, 81);
+margin-left: 250px;
+ }
+.main-card-section{
+  display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+margin-left:60px ;
+}
+  }
+
+@media only screen and (min-width:601px) and (max-width:887px){
+  .main-card-section{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  }
+ .birdpic{
+  height: 300px;
+  width:800px;
+  margin-left:10px ;
+ }
+ .text-photo{
+display: block;
+margin-left: auto;
+margin-right: auto;
+ }
+ .cards{
+  width:400px;
+  border: 2px double rgb(3, 38, 58) ;
+  height:400px;
+  padding:5px;
+  margin:20px;
+  box-shadow: 1px 1px 30px rgba(93, 157, 240, 0.2),-1px -1px 10px rgb(1, 52, 81);
+ }
+.main-card-section{
+  display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+margin-left:20px;
+
+}
+.card-image{width:400px;
+}
+
+
+}
+    </style>
 </head>
 <body> 
-    
-    
+  
   <div class="main-menu">
-    <div class="Logo">
-      PicsNow
-    </div>
+    <div class="logo">
+      <h5><b class="Logo">pics now.</b></h5>
+  </div>
 <div class="menu-container">
   <a href="../index.html" class="menus" target="_blank">HOME</a>
    <a href="./about.html"  class="menus" target="_blank">ABOUT US</a>
-   <a href="contact.html"  class="menus" target="_blank">NEXT</a>
+   <a href="./wild-life.html"  class="menus" target="_blank">NEXT</a>
    </div>
-
    <div class="dropdown">
-    <button class="dropbtn">
-        EXPLORE
+    <button class="dropbtn">EXPLORE
     </button>
-
     <div class="dropdown-content">
       <a href="wild-life.html" target="_blank">Wild-life photography</a>
-      <a href="model.html" target="_blank">model photoshootes</a>
-      <a href="exibition.html" target="_blank" >Exhibition</a>
+      <a href="model.html" target="_blank">Model photoshoots</a>
+      <a href="portfolio.html" target="_blank">buy portfolio's</a>
     </div>
   </div>
 
    <div class="heading-main">
-   <div>
-    <h1 class="heading">🤵🏻Wedding Photography👰🏻</h1>
-   </div>
+    <h1 class="heading"> WILD-LIFE PHOTOGRAPHY</h1>
+   <div class="center-img">
+<img src="../img/Wedding Title image.avif" class="birdpic"><hr>
+    <h1 class="text-photo">📸OUR WEDDING PAGE </h1>
+  </div>
+</div>
 
-   <h1 class="heading-name">Wedding page </h1>
-   <p class="description">
-    🙏🏻Thanks for visiting our little corner of the web. We hope you’ll join us on [Date] at [Venue]<br> to help celebrate our big day! 
-   </p>
-   </div>
+<div class="main-card-section">
+  <div class="cards">
+<img src="../img/bangali wedding card.webp" alt="tiger" class="card-image">
+<p class="facts">Bengali</p>
+<p class="info">In the Bengali wedding, the groom's arrival at the bride's house is known as Bor Boron <p>to know more..click below<button class="button"><a href="https://en.wikipedia.org/wiki/Bengali_Hindu_wedding">more info</a></button></p></p>
+  </div>
 
-   <div class="card">
-    <img src="../img/christain wedding card 2.jpg" class="card-img">
-    <p class="card-title">Christain</p>
-    <button class="card-btn" >Click here</button>
-   </div>
+  <div class="cards">
+  <img src="../img/muslim wedding card 3.jpg" class="card-image">
+  <p class="facts">Muslim</p>
+<p class="info">At which the bride does not have to be present so long as she sends two witnesses to the drawn-up agreement. <p>to know more..click below<button class="button"><a href="https://en.wikipedia.org/wiki/Marriage_in_Islam">more info</a></button></p></p></p>
+  </div>
 
-   <div class="card">
-       <img src="../img/southindian wedding card1.jpg" class="card-img">
-       <p class="card-title">South-Indian</p>
-       <button class="card-btn" ><a href="https://en.wikipedia.org/wiki/File:Traditional_South_Indian_Wedding_Ceremony.jpg">Click here</a></button>
-      </div>
+   <div class="cards">
+  <img src="../img/punjabi wedding card 4.webp" class="card-image">
+  <p class="facts">Punjabi</p>
+<p class="info">After the groom has dressed up in his wedding clothes, a puja is performed.<p>to know more..click below<button class="button"><a href="https://en.wikipedia.org/wiki/Punjabi_wedding_traditions">more info</a></button></p></p></p>
+  </div>
 
-    <div class="card">
-       <img src="../img/punjabi wedding card 4.webp" class="card-img">
-       <p class="card-title">Punjabi</p>
-       <button class="card-btn"><a href="https://en.wikipedia.org/wiki/Punjabi_wedding_traditions">Click here</a></button>
-    </div>  
-    <div class="card">
-       <img src="../img/muslim wedding card 3.jpg" class="card-img">
-       <p class="card-title">Muslim</p>
-       <button class="card-btn"><a href="https://en.wikipedia.org/wiki/Marriage_in_Islam">Click here</a></button>
-    </div> 
-    <div class="card">
-      <img src="../img/gujarati wedding card.webp" class="card-img">
-      <p class="card-title">Gujarati</p>
-     <button class="card-btn"><a href="https://en.wikipedia.org/wiki/Culture_of_Gujarat">Click here</a></button>
-   </div> 
-   <div class="card">
-    <img src="../img/parsi wedding card.jpg" class="card-img">
-    <p class="card-title">Parsi</p>
-    <button class="card-btn"><a href="https://en.wikipedia.org/wiki/Zoroastrian_wedding">Click here</a></button>
- </div> 
-  <div class="card">
-  <img src="../img/bihari wedding card.jpeg" class="card-img">
-  <p class="card-title">Bihari</p>
-  <button class="card-btn"><a href="https://en.wikipedia.org/wiki/Bihari_culture">Click here</a></button>
-</div> 
-<div class="card">
-  <img src="../img/jain wedding card.webp" class="card-img">
-  <p class="card-title">Jain</p>
-  <button class="card-btn"><a href="https://en.wikipedia.org/wiki/Jain_law">Click here</a></button>
-</div> 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>footer</title>
-<style>
-    .abc{
-        padding: 0;
-        margin: 0;
+ <div class="cards">
+ <img src="../img/christain wedding card 2.jpg" class="card-image">
+ <p class="facts">Christain</p>
+<p class="info">he bride is greeted at the altar at a Christian wedding, not the groom. <p>to know more..click below<button class="button"><a href="https://en.wikipedia.org/wiki/Christian_views_on_marriage">more info</a></button></p></p></p>
+              </div>
 
-    }
-    .footer{
-        position: fixed;
-        bottom: 0;
-    }
-    .footer-distributed{
-        background-color: #2d3a2d;
-        box-sizing: border-box;
-        width:  100%;
-        text-align: left;
-        font: bold 16px;
-        padding: 50px 50px 60px 50px;
-        margin-top: 80px;
-    }
-     .footer-distributed,.footer-left.footer-distributed,.footer-center.footer-distributed,.footer-right{
-        display: inline-block;
-        vertical-align: top;
-    }
-    .footer-left{
-         width: 30%;
-    }
-    .footer-logo{
-      color: aqua;
-    }
-    .footer-distributed h3{
-        color: #ffff;
-        font: normal 36px;
-        margin: 0;
-    }
-    .footer-distributed h3 span{
-        color: #e0ac1c;
-    }
-    .footer-links{
-        color: #fff;
-        margin: 20px 0 12px;
-    }
-    .footer-links a{
-        display: inline-block;
-        line-height: 1.8;
-        text-decoration: none;
-        color: inherit;
-    }
-     .footer-c-name{
-        color: #8f9296;
-        font-size: 14px;
-        font-weight: normal;
-        margin: 0;
-    }
-     .footer-center{
-        width: 35%;
-    }
-    .footer-center i{
-        background-color: #33383b;
-        color: #ffff;
-        font-size: 25px;
-        width: 38px;
-        height: 38px;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 42px;
-        margin: 10px 15px;
-        vertical-align: middle;
-    }
-    .footer-center i.fa-envelop{
-        font-size: 17px;
-        line-height: 38px;
-    }
-    .footer-center p{
-        display: inline-block;
-        color: #ffff;
-        vertical-align: middle;
-        margin: 0;
-    }
-     .footer-center p span{
-        display:block;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 2;
-    }
-     .footer-center p a{
-        color:#e0ac1c;
-        text-decoration: none;
-    }
-    .footer-right{
-        width: 30px;
-    }
-    .footer-c-about{
-        max-width: 500px;
-        margin: 10px auto;
-        line-height: 28px;
-        font-size: 14px;
-        color: #cacdd2;
-    }
-     .footer-c-about span{
-        display: block;
-        color: #ffff;
-        font-size: 18px;
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
-    .footer-icons li{
-        margin:0 10px;
-    }
-    .footer-icons{
-        list-style: none;
-        display:flex;
-        align-items: center;
-        justify-content: center;
-         margin:1rem 0rem;
-    }
-    .footer-icons a{
-        text-decoration: none;
-        color: #fff;
-        border: 1.1px solid white;
-        padding: 5px;
-        border-radius: 50%;
-    }
-    .footer-icons a i{
-         font-size: 1.1rem;
-         width: 20px;
-         transition: color .4s ease;
-    }
-      .footer-icons a:hover i{
-         color:aqua;
-     }
-     .footer-links a:hover{
-        color:aqua;
-     }
-    @media only screen and (max-height:800px) {
-        .footer{
-            position: static;
-        }
-        .header{
-            padding-top: 40px;
-        }
-    }
-    @media only screen and (max-height:800px) {
-         .footer-distributed,.footer-links.footer-distributed,.footer-center.footer-distributed,.footer-right{
-            display: flex;
-            width: 100%;
-            margin-bottom: 40px;
-           text-align: center;
-    }
-       .footer-center i{
-        width: 30px;
-    }
-    }
-</style>
-</head>
-<body>
-  <header></header>
-   <footer class="footer-distributed">
-    <div class="footer-left">
-        <h1 class="footer-logo">wedding photoshootes</h1>
-        <p class="footer-links">
-            <a href="../index.html">Home</a>
-            |
-            <a href="../pages/about.html">about </a>
-            |
-            <a href="../pages/contact.html">contact </a>
-            |
-            <a href="../model.html">Model</a>
-        </p>
-        <p class="footer-c-name">copyright 2023 <strong>wedding photoshootes</strong>
-        all rights reversed</p>
-    </div>
-    <div class="footer-center">
-            <div>
-           <i class="fa-solid fa-location-dot"></i>
-           <p><span>Rahuri </span>Factory</p>
-        </div>
-        <div>
-            <i class="fa fa-phone"></i>
-            <p>+98*768767*</p>
-        </div>
-        <div>
-            <i class="fa-solid fa-envelope"></i>
-            <p><a href="#">suyashssagalgile543@gmail.com</a></p>
-        </div>
-    </div>
-        <div class="footer-right">
-            <p class="footer-c-about">
-                <span>About us</span>
-                <strong>wedding photoshootes</strong>We offer catering services for any kind of event!<br/>Contact us to bright photoshoots
-            <br/>
-            <ul class="footer-icons">
-              <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-              <li> <a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-              <li> <a href=""><i class="fa-brands fa-instagram"></i></a></li>
-              <li> <a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-               <li> <a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-            </ul>
-        </div>
-    </div>
-   </footer>
-  <script src="https://kit.fontawesome.com/90fb78d75b.js" crossorigin="anonymous"></script>
+              <div class="cards">
+                <img src="../img/southindian wedding card1.jpg" class="card-image">
+                <p class="facts">South-Indian</p>
+<p class="info">peacock:they are national bird of india,they take 10 years to develop beautiful features. <p>to know more..click below<button class="button"><a href="https://en.wikipedia.org/wiki/Telugu_wedding_ceremony">more info</a></button></p></p></p>
+                  </div>
+
+                  <div class="cards">
+                    <img src="../img/parsi wedding card.jpg" class="card-image">
+                    <p class="facts">Parsi</p>
+<p class="info">before the groom steps on the stage, the bride's mother performs a ritual called Achumichu. <p>to know more..click below<button class="button"><a href="https://en.wikipedia.org/wiki/Zoroastrian_wedding">more info</a></button></p></p></p>
+                      </div>
+
+                          <div class="cards">
+                            <img src="../img/bihari wedding card.jpeg" class="card-image">
+                            <p class="facts">Bihari</p>
+<p class="info">Bihari weddings are known for their lavishness, elaborate preparations, and vibrant cultural events. <p>to know more..click below<button class="button"><a href="https://en.wikipedia.org/wiki/File:Bihari_Bride_and_groom.jpg">more info</a></button></p></p></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              <div class="cards">
+                                <img src="../img/jain wedding card.webp" class="card-image">
+                                <p class="facts">Jian</p>
+<p class="info">In a Jain wedding, the mangal pheras are the most important ritual. <p>to know more..click below<button class="button"><a href="https://en.wikipedia.org/wiki/Tamil_Jain">more info</a></button></p></p></p>
+                                  </div>
+
+                                  <div class="cards">
+                                    <img src="../img/puma.jpg" class="card-image">
+                                    <p class="facts">facts</p>
+<p class="info">puma:basically they are large secretive cat . <p>to know more..click below<button class="button"><a href="https://en.wikipedia.org/wiki/puma">more info</a></button></p></p></p>
+                                      </div>
+
+                                      <div class="cards">
+                                        <img src="../img/baby-tiger.jpg" class="card-image">
+                                        <p class="facts">facts</p>
+<p class="info">baby-tiger:a baby tiger is basically called as cub,they are born nlind and are completely depend on their mother. <p>to know more..click below<button class="button"><a href="https://en.wikipedia.org/wiki/baby tiger">more info</a></button></p></p></p>
+                                          </div>
+
+                                          <div class="cards">
+                                            <img src="../img/elephant.jpg" class="card-image">
+                                            <p class="facts">facts</p>
+<p class="info">elephant:they are largest living land animals ,and they constantly eat. <p>to know more..click below<button class="button"><a href="https://en.wikipedia.org/wiki/elephant">more info</a></button></p></p></p>
+                                              </div>
+
+                                              <div class="cards">
+                                                <img src="../img/snake.jpg" class="card-image">
+                                                <p class="facts">facts</p>
+<p class="info">snakes:they smell ther tounges,they have external ears. <p>to know more..click below<button class="button"><a href="https://en.wikipedia.org/wiki/snakes">more info</a></button></p></p></p>
+                                                  </div>
+
+                                                  <div class="cards">
+                                                    <img src="../img/rino.jpg" class="card-image">
+                                                    <p class="facts">facts</p>
+<p class="info">rino:they can weigh over 3 tonnes,and they have poor vision. <p>to know more..click below<button class="button"><a href="https://en.wikipedia.org/wiki/rino">more info</a></button></p></p></p>
+                                                      </div>
+
+                                                      <div class="cards">
+                                                        <img src="../img/chamellion.jpg" class="card-image">
+                                                        <p class="facts">facts</p>
+<p class="info">chamellion:they use their tails andtoes to go around,they can change color. <p>to know more..click below<button class="button"><a href="https://en.wikipedia.org/wiki/chamellion">more info</a></button></p></p></p>
+                                                          </div>
+
+
+                                                          <div class="cards">
+                                                            <img src="../img/flamingo.jpg" class="card-image">
+                                                            <p class="facts">facts</p>
+<p class="info"> flamingo:their nest are made mud,they got their pink color from their blood. <p>to know more..click below<button class="button"><a href="https://en.wikipedia.org/wiki/flamingo">more info</a></button></p></p></p>
+                                                              </div>
+
+                                                              <html lang="en">
+                                                                <head>
+                                                                    <meta charset="UTF-8">
+                                                                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                                                    <title>footer</title>
+                                                                <style>
+                                                                    .abc{
+                                                                        padding: 0;
+                                                                        margin: 0;
+                                                                
+                                                                    }
+                                                                    .footer{
+                                                                        position: fixed;
+                                                                        bottom: 0;
+                                                                    }
+                                                                    .footer-distributed{
+                                                                        background-color: #2d3a2d;
+                                                                        box-sizing: border-box;
+                                                                        width:  100%;
+                                                                        text-align: left;
+                                                                        font: bold 16px;
+                                                                        padding: 50px 50px 60px 50px;
+                                                                        margin-top: 80px;
+                                                                    }
+                                                                     .footer-distributed,.footer-left.footer-distributed,.footer-center.footer-distributed,.footer-right{
+                                                                        display: inline-block;
+                                                                        vertical-align: top;
+                                                                    }
+                                                                    .footer-left{
+                                                                         width: 30%;
+                                                                    }
+                                                                    .footer-logo{
+                                                                      color: aqua;
+                                                                    }
+                                                                    .footer-distributed h3{
+                                                                        color: #ffff;
+                                                                        font: normal 36px;
+                                                                        margin: 0;
+                                                                    }
+                                                                    .footer-distributed h3 span{
+                                                                        color: #e0ac1c;
+                                                                    }
+                                                                    .footer-links{
+                                                                        color: #fff;
+                                                                        margin: 20px 0 12px;
+                                                                    }
+                                                                    .footer-links a{
+                                                                        display: inline-block;
+                                                                        line-height: 1.8;
+                                                                        text-decoration: none;
+                                                                        color: inherit;
+                                                                    }
+                                                                     .footer-c-name{
+                                                                        color: #8f9296;
+                                                                        font-size: 14px;
+                                                                        font-weight: normal;
+                                                                        margin: 0;
+                                                                    }
+                                                                     .footer-center{
+                                                                        width: 35%;
+                                                                    }
+                                                                    .footer-center i{
+                                                                        background-color: #33383b;
+                                                                        color: #ffff;
+                                                                        font-size: 25px;
+                                                                        width: 38px;
+                                                                        height: 38px;
+                                                                        border-radius: 50%;
+                                                                        text-align: center;
+                                                                        line-height: 42px;
+                                                                        margin: 10px 15px;
+                                                                        vertical-align: middle;
+                                                                    }
+                                                                    .footer-center i.fa-envelop{
+                                                                        font-size: 17px;
+                                                                        line-height: 38px;
+                                                                    }
+                                                                    .footer-center p{
+                                                                        display: inline-block;
+                                                                        color: #ffff;
+                                                                        vertical-align: middle;
+                                                                        margin: 0;
+                                                                    }
+                                                                     .footer-center p span{
+                                                                        display:block;
+                                                                        font-weight: normal;
+                                                                        font-size: 14px;
+                                                                        line-height: 2;
+                                                                    }
+                                                                     .footer-center p a{
+                                                                        color:#e0ac1c;
+                                                                        text-decoration: none;
+                                                                    }
+                                                                    .footer-right{
+                                                                        width: 30px;
+                                                                    }
+                                                                    .footer-c-about{
+                                                                        max-width: 500px;
+                                                                        margin: 10px auto;
+                                                                        line-height: 28px;
+                                                                        font-size: 14px;
+                                                                        color: #cacdd2;
+                                                                    }
+                                                                     .footer-c-about span{
+                                                                        display: block;
+                                                                        color: #ffff;
+                                                                        font-size: 18px;
+                                                                        font-weight: bold;
+                                                                        margin-bottom: 20px;
+                                                                    }
+                                                                    .footer-icons li{
+                                                                        margin:0 10px;
+                                                                    }
+                                                                    .footer-icons{
+                                                                        list-style: none;
+                                                                        display:flex;
+                                                                        align-items: center;
+                                                                        justify-content: center;
+                                                                         margin:1rem 0rem;
+                                                                    }
+                                                                    .footer-icons a{
+                                                                        text-decoration: none;
+                                                                        color: #fff;
+                                                                        border: 1.1px solid white;
+                                                                        padding: 5px;
+                                                                        border-radius: 50%;
+                                                                    }
+                                                                    .footer-icons a i{
+                                                                         font-size: 1.1rem;
+                                                                         width: 20px;
+                                                                         transition: color .4s ease;
+                                                                    }
+                                                                
+                                                                      .footer-icons a:hover i{
+                                                                         color:aqua;
+                                                                     }
+                                                                     .footer-links a:hover{
+                                                                        color:aqua;
+                                                                     }
+                                                                
+                                                                
+                                                                    @media only screen and (max-height:600px) {
+                                                                    .footer-distributed{
+height: 200px;
+width: 300px;
+margin-left: 200px;
+                                                                    }
+                                                                    .footer-left{
+                                                                      height: 200px;margin-left: 200px;
+width: 300px;
+                                                                    }
+
+
+                                                                        
+                                                                    }
+                                                                    @media only screen and (max-height:800px) {
+                                                                         .footer-distributed,.footer-links.footer-distributed,.footer-center.footer-distributed,.footer-right{
+                                                                            display: flex;
+                                                                            width: 100%;
+                                                                            margin-bottom: 40px;
+                                                                           text-align: center;
+                                                                    }
+                                                                       .footer-center i{
+                                                                        width: 30px;
+                                                                    }
+                                                                    }
+                                                                
+                                                                        
+                                                          
+                                                                </style>
+                                                                
+                                                                </head>
+                                                                <body>
+                                                                   <header>
+                                                                  
+                                                                   </header> 
+                                                                   <footer class="footer-distributed">
+                                                                    <div class="footer-left">
+                                                                        <h1 class="footer-logo">wild life photography</h1>
+                                                                        <p class="footer-links">
+                                                                            <a href="index.html">Home</a>
+                                                                            |
+                                                                            <a href="about.html">about </a>
+                                                                            |
+                                                                            <a href="contact.html">contact </a>
+                                                                            |
+                                                                            <a href="model.html">view more</a>
+                                                                        </p>
+                                                                        <p class="footer-c-name">ICP6-g-14 road to code <strong>wedding photoshootes</strong>
+                                                                        all rights reversed</p>
+                                                                    </div>
+                                                                    <div class="footer-center">
+                                                                            <div>
+                                                                           <i class="fa-solid fa-location-dot"></i>
+                                                                           <p><span>Rahuri </span>Factory</p>
+                                                                        </div>
+                                                                        <div>
+                                                                            <i class="fa fa-phone"></i>
+                                                                            <p>+91 95*7*312</p>
+                                                                
+                                                                        </div>
+                                                                        <div>
+                                                                            <i class="fa-solid fa-envelope"></i>
+                                                                            <p><a href="#">suyashssagalgile543@gmail.com</a></p>
+                                                                        </div>
+                                                                    </div>
+                                                                
+                                                                        <div class="footer-right">
+                                                                            <p class="footer-c-about">
+                                                                                <span>About us</span>
+                                                                                <strong>Wedding photography is a specialty in photography that is primarily focused on the photography of events and activities relating to weddings.</strong>!<br/>📞Contact us:- your your pet photoshootes or buy some interesting portfolios
+                                                                            <br/>
+                                                                            <ul class="footer-icons">
+                                                                              <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                                                              <li> <a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                                                              <li> <a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                                                              <li> <a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                                                               <li> <a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                   </footer>
+                                                                
+                                                                 
+  
+<script src="https://kit.fontawesome.com/4e319ddf15.js" crossorigin="anonymous"></script>
 </body>
 </html>
