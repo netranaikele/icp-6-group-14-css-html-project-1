@@ -13,16 +13,17 @@
 background-size: 100% 100%;
 height:220vh;
 margin: 0%;
-  }git 
- 
-  }
- .title{
-  margin-right: 200px;
-   color: #dbe3e7;
-   filter: drop-shadow(3px 3px 10px black);
-   -webkit-text-stroke-width:1px;
-   -webkit-text-stroke-color:  #588c7e; 
- }
+      }
+      .Logo{
+        font-width: 20px;
+        letter-spacing: 2px;
+       background: linear-gradient(90deg,#00dbde,#fc00ff);
+        font-size: poppins;
+        text-transform: uppercase;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: #fff ;
+      }
 .heading-main{
 overflow: hidden;
     margin-left: auto;
@@ -142,6 +143,8 @@ border-radius:8px ;
   flex-wrap: wrap;
   justify-content:space-around;
   margin-top: 30px;
+  cursor: pointer;
+  height: 400px;
 }
 
     .cards{
@@ -161,13 +164,29 @@ border-radius:8px ;
       margin-right: auto; 
       filter: drop-shadow(0px 0px 10px rgb(233, 233, 237) ) ;
     }
+    .cards:hover{
+  transition-duration: 0.4s;
+  opacity: 2;
+  background-color: #7a3b2e;
+  color:black;
+  border:2px groove  #622569;
+  border-radius: 10%;
+  box-shadow: 1px 1px 30px rgba(0, 9, 21, 0.2),-1px -1px 10px rgb(68, 2, 58);
+
+
+  
+}
+.card-image:hover{
+  border:1px solid lavenderblush;
+  border-radius:40%;}
     </style>
 </head>
 <body> 
 
   <div class="main-menu">
-    <img src="../img/camera.png" class="camera-pic">
-    <h1 class="title">ROAD TO PHOTOGRAPHY</h1>
+    <div class="logo">
+      <h5><b class="Logo">pics now.</b></h5>
+  </div>
 <div class="menu-container">
   <a href="main.html" class="menus" target="_blank">HOME</a>
    <a href="about.html"  class="menus" target="_blank">ABOUT US</a>
@@ -258,8 +277,218 @@ border-radius:8px ;
                                                                 <img src="../img/modelC.png" class="card-image">
                                                                   </div>
 </div>
-  
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footer</title>
+<style>
+    .abc{
+        padding: 0;
+        margin: 0;
+
+    }
+    .footer{
+        position: fixed;
+        bottom: 0;
+    }
+    .footer-distributed{
+        background-color: #2d3a2d;
+        box-sizing: border-box;
+        width:  100%;
+        text-align: left;
+        font: bold 16px;
+        padding: 50px 50px 60px 50px;
+        margin-top: 80px;
+    }
+     .footer-distributed,.footer-left.footer-distributed,.footer-center.footer-distributed,.footer-right{
+        display: inline-block;
+        vertical-align: top;
+    }
+    .footer-left{
+         width: 30%;
+    }
+    .footer-logo{
+      color: aqua;
+    }
+    .footer-distributed h3{
+        color: #ffff;
+        font: normal 36px;
+        margin: 0;
+    }
+    .footer-distributed h3 span{
+        color: #e0ac1c;
+    }
+    .footer-links{
+        color: #fff;
+        margin: 20px 0 12px;
+    }
+    .footer-links a{
+        display: inline-block;
+        line-height: 1.8;
+        text-decoration: none;
+        color: inherit;
+    }
+     .footer-c-name{
+        color: #8f9296;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+    }
+     .footer-center{
+        width: 35%;
+    }
+    .footer-center i{
+        background-color: #33383b;
+        color: #ffff;
+        font-size: 25px;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 42px;
+        margin: 10px 15px;
+        vertical-align: middle;
+    }
+    .footer-center i.fa-envelop{
+        font-size: 17px;
+        line-height: 38px;
+    }
+    .footer-center p{
+        display: inline-block;
+        color: #ffff;
+        vertical-align: middle;
+        margin: 0;
+    }
+     .footer-center p span{
+        display:block;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 2;
+    }
+     .footer-center p a{
+        color:#e0ac1c;
+        text-decoration: none;
+    }
+    .footer-right{
+        width: 30px;
+    }
+    .footer-c-about{
+        max-width: 500px;
+        margin: 10px auto;
+        line-height: 28px;
+        font-size: 14px;
+        color: #cacdd2;
+    }
+     .footer-c-about span{
+        display: block;
+        color: #ffff;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .footer-icons li{
+        margin:0 10px;
+    }
+    .footer-icons{
+        list-style: none;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+         margin:1rem 0rem;
+    }
+    .footer-icons a{
+        text-decoration: none;
+        color: #fff;
+        border: 1.1px solid white;
+        padding: 5px;
+        border-radius: 50%;
+    }
+    .footer-icons a i{
+         font-size: 1.1rem;
+         width: 20px;
+         transition: color .4s ease;
+    }
+
+      .footer-icons a:hover i{
+         color:aqua;
+     }
+     .footer-links a:hover{
+        color:aqua;
+     }
+
+
+    @media only screen and (max-height:800px) {
+        .footer{
+            position: static;
+        }
+        .header{
+            padding-top: 40px;
+        }
+    }
+    @media only screen and (max-height:800px) {
+         .footer-distributed,.footer-links.footer-distributed,.footer-center.footer-distributed,.footer-right{
+            display: flex;
+            width: 100%;
+            margin-bottom: 40px;
+           text-align: center;
+    }
+       .footer-center i{
+        width: 30px;
+    }
+    }
+</style>
+</head>
+<body>
+  <header></header>
+   <footer class="footer-distributed">
+    <div class="footer-left">
+        <h1 class="footer-logo">model photoshootes</h1>
+        <p class="footer-links">
+            <a href="../index.html">Home</a>
+            |
+            <a href="../pages/about.html">about </a>
+            |
+            <a href="../pages/contact.html">contact </a>
+            |
+            <a href="../model.html">Model</a>
+        </p>
+        <p class="footer-c-name">ICP6-g-14 <strong>model photoshootes</strong>
+        all rights reversed</p>
+    </div>
+    <div class="footer-center">
+            <div>
+           <i class="fa-solid fa-location-dot"></i>
+           <p><span>Rahuri </span>Factory</p>
+        </div>
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+98*768767*</p>
+
+        </div>
+        <div>
+            <i class="fa-solid fa-envelope"></i>
+            <p><a href="#">siddhart@gmail.com</a></p>
+        </div>
+    </div>
+
+        <div class="footer-right">
+            <p class="footer-c-about">
+                <span>About us</span>
+                <strong>model photoshootes</strong>We offer many services for any kind of event!<br/>Contact us to bright photoshoots
+            <br/>
+            <ul class="footer-icons">
+              <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+              <li> <a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li> <a href=""><i class="fa-brands fa-instagram"></i></a></li>
+              <li> <a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+               <li> <a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div>
+   </footer>
+ 
 <script src="https://kit.fontawesome.com/4e319ddf15.js" crossorigin="anonymous"></script>
 </body>
 </html>

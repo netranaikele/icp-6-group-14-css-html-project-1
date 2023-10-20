@@ -12,6 +12,10 @@
             background-image: url("./img/P11.jpg");
             background-size: cover;
             font-family: sans-serif;
+            background-position: 0px ;
+background-size: 100% 100%;
+height:200vh;
+margin: 0%;
         }
         nav{
             width: 100%;
@@ -21,10 +25,16 @@
             justify-content: space-around;
             align-items: center;
         }
-        .logo{
-            font-size: 2em;
+        .Logo{
+            font-width: 20px;
             letter-spacing: 2px;
-        }
+           background: linear-gradient(90deg,#00dbde,#fc00ff);
+            font-size: poppins;
+            text-transform: uppercase;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: #fff ;
+          }
         .menu a{
             text-decoration: none;
             color: white;
@@ -71,6 +81,8 @@
             transform: translate(-50%,-50%);
             color: white;
             font-family: sans-serif;
+            margin-top: 80px;
+            margin-right: 20%;
         }
         .h-txt{
         width:500px;
@@ -104,24 +116,41 @@
             color: white;
             text-align: center;
             }
+            @media only screen and (max-width:600px){
+              .header{
+                width:60%;
+                height: 60vh;
+                background-image: url("./img/P11.jpg");
+                background-size: cover;
+                font-family: sans-serif;
+                background-position: 0px ;
+    background-size: 100% 100%;
+    
+    margin: 0%;
+              }
+              .h-txt{
+                height:450px;
+                margin-right: 100px;
+              }
+            }   
     </style>
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <h5><b>Lens co.</b></h5>
+                <h5><b class="Logo">pics now.</b></h5>
             </div>
             <div class="menu">
-                <a href="#">Home</a>
-                <a href="#">Explore</a>
-                <a href="#">Portfolio</a>
-                <a href="#">About Us</a>
-                <a href="#">Location</a>
-                <a href="#">Contact</na>
+                <a href="./pages/index.html" >Home</a>
+                <a href="./pages/wild-life.html" >Explore more</a>
+                <a href="./pages/portfolio.html">buy now</a>
+                <a href="./pages/about.html" >About Us</a>
+                
+                <a href="contact.html">Contact</a>
             </div>
             <div class="login">
-                <a href="#">LOGIN</a>
+                <a href="./pages/contact.html">LOGIN</a>
             </div>
             <div class="footer">
                 <p>Design by &copy G-14 ICP6.0</p>
