@@ -1,67 +1,84 @@
-
 <!DOCTYPE html>
-<html lang="en">
+< lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LANDING_PAGE</title>
-    <style type="text/css">
-        *{padding: 0; margin: 0; box-sizing: border-box;}
-        header{
-            width: 100%;
-            height: 100vh;
-            background-image: url("../img/backgroundimg2.jpg");
-            background-size: cover;
-            font-family: sans-serif;
-        }
-        .title{
-  margin-right: 200px;
-   color: #dbe3e7;
-   filter: drop-shadow(3px 3px 10px black);
-   -webkit-text-stroke-width:1px;
-   -webkit-text-stroke-color:  #588c7e; 
- }
- .heading-main{
-overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-    display:inline-flexbox;flex-wrap: wrap;
-    cursor: pointer;
-    margin-top: 20px;
-
+    <title>Wedding page</title>
+  <link rel="stylesheet" href="theme.css">
+    <style>
+      body{
+        background-image: url(../img/backgroundimg.jpg);
+        background-position: 0px ;
+  background-size: 100% 100%;
+  height:220vh;
+  margin: 0%;
+    }
+    .Logo{
+      font-width: 20px;
+      letter-spacing: 2px;
+     background: linear-gradient(90deg,#00dbde,#fc00ff);
+      font-size: poppins;
+      text-transform: uppercase;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: #fff ;
+    }
+      .heading-main{
+      overflow: hidden;
+      margin-left: auto;
+      margin-right: auto;
       }
-    .heading{ 
-font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      font-weight: bolder;
+    
+      .heading{  
+        font-family:sans-serif;
+        color: #f4db79;
+        font-weight: bolder;
         font-size: 60px;
         text-align:center;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 10px;
-   -webkit-text-fill-color:#80ced6; 
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color:  black;
-  filter: drop-shadow( 5px 5px 11px rgb(243, 243, 240));
-        
-       
-    }
-.main-menu{
-  display:flex;justify-content:flex-end;flex-wrap: wrap;
- background-color: #03373c;
-  height:55px; box-shadow:1px 1px 10px #010006; 
+        margin-top: 0%;
+        border:8px double white;
+        border-radius: 30px;
+        text-align: center;
+        -webkit-text-fill-color:#00394d; 
+        -webkit-text-stroke: 2px rgb(133, 217, 219);
+      }
 
+      .Logo{
+            font-size: 2.1em;
+            letter-spacing: 2px;
+            font-size: poppins;
+            background-color: #fff;
+            text-transform: uppercase;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: #fff ;
+          }
+
+        
+    .main-menu{
+         display:flex;justify-content:end;flex-wrap: wrap;
+         background-image:  linear-gradient(to left,#000000,#000033);
+          height:50px;
 }
 .menus{
   color:#dbe3e7;
-background-color:#00394d ;
-  margin: 20px;
+  background-color: #00394d ;
+ margin: 20px;
   padding: 5px;
   border:2px solid cadetblue;
   width:60px;
   border-radius:6px ;
   font-weight: 10px;
  font-family:fantasy;
+ position: relative;
+}
 
+.menus:hover{
+    border-radius: 20px;
+  background-color:  #190b62;
+    box-shadow:1px 1px 5px #e6cee9 ,1px 1px 5px #044349;
 }
 .menu-container{
   margin:22px;
@@ -70,12 +87,14 @@ background-color:#00394d ;
 .dropdown {
   float: left;
   padding:5px;
+  
   overflow: hidden;
+ 
 }
-
-.dropdown .dropbtn {
-  font-weight: 14px;
-  width:60px;height:33px ;
+.dropbtn {
+  font-weight: 10px;
+  width:60px;
+  margin-top: 15px;
   font-family:fantasy;
   border-radius: 6px;
   border: 2px solid cadetblue;
@@ -84,129 +103,283 @@ background-color:#00394d ;
   background-color:#00394d; 
   margin: 8px;
   margin-right: 70px;
-  margin-bottom: 0px;margin-top: 9.8px;
+  margin-bottom: 22px;
 }
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color:  #190b62;
   cursor: pointer;color: #dbe3e7;
   box-shadow:1px 1px 5px #e6cee9 ,1px 1px 5px #044349;
   border:1px double  #c8c3cc ;
-  transition: 0.4s linear;
+  transition: 0.5s linear;
   ;
 }
 .dropdown-content {
   display: none;
-  background-color:#035f81;
+  background-color:#77a8a8;
+min-width: auto;
+position: absolute;
 
-position:relative;
-  box-shadow: 1px 1px 10px #e6cee9 ,1px 1px 10px #03373c;
+  box-shadow: 1px 1px 10px #e2d5e3 ,1px 1px 10px #03373c;
  
 }
 .dropdown-content a {
   float:none;
-  color: #010513;
-  padding:5px;
+  color: #021119;;
+  padding:22px;
   text-decoration: none;
   display: block;
-  z-index: 9;
-  border: 2px solid rgb(7, 4, 0);
+  z-index: 1;
   text-align: left;
-border-radius:8px ;
+}
+
+.description{
+    color: #fff;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
 }
 .dropdown-content a:hover {
   background-color: #ddd;
 }
 .dropdown:hover .dropdown-content {
-  display:block;
+  display: block;
+}
+.edit-options{
+  border:1px solid black;
+}
+.heading-name{margin-bottom: 29px;
+  color: red;opacity: 0.8;
+  margin-left: 100px;
+  margin-top: 90px;
+  filter: drop-shadow( 5px 5px 11px black);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-        
-        .menu a{
-            text-decoration: none;
-            color: white;
-            padding: 10px 20px;
-            font-size: 20px;
-            position: relative;
+    .head{
+  margin-top: 0%;
+  }
+          .card-img{
+            height: 350px;
+            width: 350px;
+            border-radius: 20px;
+            display: block;
+            justify-content: center;
+            margin: 10px;
+            padding: auto;
+        }
 
-        }
-        .menu a:before{
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 0%;
-            height: 100%;
-            border-bottom: 2px solid white;
-            transition: 0.4s linear;
-        }
-        .menu a:hover:before{
-            width: 100%;
-        }
-        .login {
-            text-decoration: none;
-            padding: 10px 20px;
-            color: white;
-            font-size: 20px;
-            background: brown; 
-            border-radius: 5px;
 
-            transition: 0.4s;
-            margin:10px 20px 10px 20px;
-            transition: 0.4s linear;
+ .card-btn{
+     font-weight: bold;
+     border-radius: 20px;
+     padding: 5px 25px;
+     border-color: #fff;
+     color: #fff;
+     background-color:#ff0ba1;
+     margin-left:100px ;
+     text-align: center;
+     margin-top: 10px;
+     font-size: 15px;
+     cursor: pointer;
+     }
 
+     .card-btn:hover{
+      border-radius: 10px;
+      box-shadow: 0 0 15px 4px #fff;
+      color: #f20808;
+
+    }
+
+     .cards{
+      width:260px;
+      border: 2px double rgb(3, 38, 58) ;
+      height:400px;
+      padding:10px;
+      margin:20px;
+      box-shadow: 1px 1px 30px rgba(93, 157, 240, 0.2),-1px -1px 10px rgb(1, 52, 81);
+     }
+
+     .card:hover{
+            box-shadow: 0 0 15px 4px white ;
+            border-radius: 10px;
+            background-color: #00dbde;
+            transition: 0.1s;
         }
-        .login a{
-            color:white;
-            text-decoration: none;
+
+
+     .card-img{
+            height: 350px;
+            width: 350px;
+            border-radius: 20px;
         }
-        .a :hover{
-            background: transparent;
-            transition: 0.4s linear;
+
+    
+        .card-title{
+          color: #f5f505;
+          font-size: 40px;
+          font-style: italic;
         }
+
+        .card-title:hover{
+          color: #f7f5f5;
+          cursor: pointer ;
+          font-weight: bold;
+        }
+
+      .description{
+        margin-left: 50px;
+        text-align: center;
+        font-size: 100px;
+        margin-right: 500px;
+      }
+
+      .msg{
+        color: #fff;
+        font-style: italic;
+        text-align: center;
+        font-size: larger;
+      }
+
+      .heading-btn{
+        margin-top: 50px;
+        display: block;
+        justify-content: space-evenly;
+      }
+      div.main{
+        width: 450px;
+        margin: 150px auto 50px auto;
+    
+    }
+    h2{
+        text-align: center;
+        padding: 20px 20px 20px 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    div.register{
+        background-color:rgba(0, 0, 0, 0.5); 
+        width: 100%;
+        font-size: 18px;
+        border-radius: 2px;
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+        color: #fff;
+    }
+    form#register{
+        margin: 40px;
         
-         h1{
-            font-size:xx-large;
-            margin-top: 2%;
-            color:rgb(255, 208, 0);
-            font-size: 50px;
-            }
-        
-        .footer {
-            position: fixed;
-            right: 2%;
-            bottom: 0;
-            color: white;
-            text-align: center;
-            }
-    </style>
+    }
+    label{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
+    input#submit{
+        width: 200px;
+        padding: 7px;
+        font-size: 16px;
+        font-family: sans-serif;
+        border-radius: 10px;
+        background-color: #FFB74D ;
+        margin-top: 30px;
+        position: center;
+    }
+    
+      <style>
+    .dropdown-content a {
+      float:none;
+      color: #021119;;
+      padding:22px;
+      text-decoration: none;
+      display: block;
+      z-index: 1;
+      text-align: left;
+    }   
+</style>
 </head>
 <body>
-    <header>
-        <nav>
-         
-            <div class="logo">
-                <h5><b>LOGO co.</b></h5>
-            </div>
-            <div class="menu-container">
-                <a href="main.html" class="menus" target="_blank">HOME</a>
-                 <a href="about.html"  class="menus" target="_blank">ABOUT US</a>
-                 <a href="wedding.html"  class="menus" target="_blank">NEXT</a>
-                 </div>
-                 
-                 
-                </div>
-                </div>
-              
-                 <div class="heading-main">
-                  <h1 class="heading"> HIRING PAGE</h1>
-            <div class="footer">
-                <p>Design by &copy G-14 ICP6.0</p>
-              </div>
-        </nav>
-        <div class="h-txt">
-            <h1>WE'RE HIRING<br>
-                A PHOTOGRAPHER</h1>
-            </div>
-    </header>
-</body> 
+  📸 
+    <div class="Logo">
+      PicsNow
+    </div>
+    
+  <div class="main-menu">
+<div class="menu-container">
+  <a href="../index.html" class="menus" target="_blank">HOME</a>
+   <a href="./about.html"  class="menus" target="_blank">ABOUT US</a>
+   <a href="contact.html"  class="menus" target="_blank">NEXT</a>
+   </div>
+
+   <div class="dropdown">
+    <button class="dropbtn">
+        EXPLORE
+    </button>
+
+    <div class="dropdown-content">
+      <a href="wild-life.html" target="_blank">Wild-life photography</a>
+      <a href="model.html" target="_blank">model photoshootes</a>
+      <a href="exibition.html" target="_blank" >Exhibition</a>
+    </div>
+  </div>
+
+   <div class="heading-main">
+   <div>
+    <h1 class="heading">HIRING</h1>
+   </div>
+
+   <h1 class="heading-name">Hiring Info</h1>
+   <p class="description">
+    We are hiring so <br> so inform us soon
+
+  </p>
+  <p class="msg">
+    ⭐⭐⭐⭐Rated 5.0 on Capterra<br>Open platform with all the features you need to build run,<br>and grow your photography board.
+  <p>
+    
+    <body>
+      <div class="main">
+          <div  class="register">
+              <h2>Registration Form 📝</h2>
+              <form id="register" action="#" method="post">
+                  <label>First Name:</label>
+                  <br>
+                  <input type="text" id="fn"  placeholder="Enter your First name"><br>
+                  <br>
+                  <label>Last Name:</label>
+                  <br>
+                  <input type="text" id="ln"  placeholder="Enter your Last name"><br>
+                  <br>
+                  <label>Password:</label>
+                  <br>
+                  <input type="password" id="pass"  placeholder="Enter a password"><br>
+                  <br>
+                  <label>Email:</label>
+                  <br>
+                  <input type="email" id="eid"  placeholder="Enter valid Email"><br>
+                  <br>
+                  <label>Address:</label>
+                  <br>
+                  <input type="text" id="ad"  placeholder="Enter your current Address"><br>
+                  <br>
+                  <label>Mobile Number:</label>
+                  <br>
+                  <input type="number" id="Mno"  placeholder="Enter Mobile number"><br>
+                  <br>
+                  <input type="submit" value="submit" name="submit" id="submit"> 
+              </form>
+          </div>
+      </div>
+  </body>
+   </div>
 </html>
+   
+    
+
+   
+
+
+
+
+
+
+
+
