@@ -3,262 +3,396 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
-
-    <link rel="stylesheet" href="S.css" type="text/css">
+    <title>Homepage</title>
     <style>
-      *{
-        margin: 0;
-        padding: 0;
-    } 
-    
-    .heading-main{
-      overflow: hidden;
-      margin-left: auto;
-      margin-right: auto;
-      }
-    
-      .heading{  
-        font-family:sans-serif;
-        color: #f4db79;
-        font-weight: bolder;
-        font-size: 60px;
-        text-align:center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0%;
-        border:8px double white;
-        border-radius: 30px;
-        text-align: center;
-        -webkit-text-fill-color:#00394d; 
-        -webkit-text-stroke: 2px rgb(133, 217, 219);
-      }
-      .Logo{
-            font-size: 2.1em;
-            letter-spacing: 2px;
-            background: linear-gradient(90deg,#00dbde,#fc00ff);
-            font-size: poppins;
-            text-transform: uppercase;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            color: #fff ; margin-right: 850px;
+     
+            body{
+                background-image: url("../img/backpic.jpg");
+                background-position: 0px ;
+                background-size: 100% 100%;
+                height:220vh;
+                margin: 0%;
+                padding: 0%;
+               
+        }
+        a {
+            text-decoration: none;
+            color: #262626;
+         }
+         
+         .text-f{
+            color:antiquewhite
           }
-    .main-menu{
-         display:flex;justify-content:end;flex-wrap: wrap;
-         background-image:  linear-gradient(to left,#000000,#000033);
-          height:50px;
-}
-.menus{
-  color:#dbe3e7;
+          .text-f:hover{
+            box-shadow: cursor: pointer;
+            filter: drop-shadow( 5px 5px 11px rgb(243, 243, 240));
+          }
+          .main-menu{
+            position: relative;
+            display:flex;justify-content:flex-end;flex-wrap: wrap;
+           background-color: #03373c;
+            height:65px; box-shadow:1px 1px 10px #010006; 
+            width:100%
+          }
+          .menus{
+            color:#dbe3e7;
+          background-color:#00394d ;
+            margin: 20px;
+            padding: 5px;
+            border:2px solid cadetblue;
+            width:60px;
+            border-radius:6px ;
+            font-weight: 10px;
+           font-family:fantasy;
+          }
+          .menus:hover{
+            background-color:  #f4f3fc;
+            cursor: pointer;color: #01090c;
+            box-shadow:1px 1px 5px #e6cee9 ,1px 1px 5px #044349;
+            border:1px double  #c8c3cc ;
+            transition: 0.4s linear;
+            border-radius: 20px; 
+          }
+          
+          .menu-container{
+            margin:22px;
+            }
+            
+          .dropdown {
+            float: left;
+            padding:5px;
+            overflow: hidden;
+          }
+          
+          .dropdown .dropbtn {
+            font-weight: 14px;
+            width:60px;height:33px ;
+            font-family:fantasy;
+            border-radius: 6px;
+            border: 2px solid cadetblue;
+            color:#dbe3e7;
+            padding: 5px;
+            background-color:#00394d; 
+            margin: 8px;
+            margin-right: 70px;
+            margin-bottom: 0px;margin-top: 9.8px;
+          }
+          .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color:  #190b62;
+            cursor: pointer;color: #dbe3e7;
+            box-shadow:1px 1px 5px #e6cee9 ,1px 1px 5px #044349;
+            border:1px double  #c8c3cc ;
+            transition: 0.4s linear;
+            ;
+          }
+          .dropdown-content {
+            display: none;
+            background-color:#035f81;
+          
+          position:relative;
+            box-shadow: 1px 1px 10px #e6cee9 ,1px 1px 10px #03373c;
+           
+          }
+          .dropdown-content a {
+            float:none;
+            color: #010513;
+            padding:5px;
+            text-decoration: none;
+            display: block;
+            z-index: 9;
+            border: 2px solid rgb(7, 4, 0);
+            text-align: left;
+          border-radius:8px ;
+          }
+          .dropdown-content a:hover {
+            background-color: #ddd;
+          }
+          .dropdown:hover .dropdown-content {
+            display:block;
+          }
+            
+        
+        .img-top{
+            width: 450px;
+            height: 470px;
+            margin-top: 200px;
+            margin-left: 100px;
+            margin-bottom: 100px;
+            box-shadow:1px 1px 10px #f1edf2 ,1px 1px 10px #044349;
+  border:1px double  #c8c3cc ;
+        }
+        #top-2{
+            margin-top: 50px;
+            margin-left: 200px;
+            height: 600px;
+            width: 400px;
+            margin-bottom: 0;
+            box-shadow:1px 1px 10px #f1edf2 ,1px 1px 10px #044349;
+            border:1px double  #c8c3cc ;
+        }
+        .welcome{
+            display: flex;
+            
+        }
+        .welcome-heading{
+            text-align: center;
+        }
+        .welcome-img{
+            width: 270px;
+            height: 370px;
+            margin-left: 250px;
+            margin-top: 30px;
+            box-shadow:1px 1px 10px #f1edf2 ,1px 1px 10px #044349;
+            border:1px double  #c8c3cc ;
+        }
+        .welcome-start{
+            margin-left: 70px;
+            margin-top: -25px; box-shadow:1px 1px 10px #f1edf2 ,1px 1px 10px #044349;
+            border:1px double  #c8c3cc ;
+            
+        }
+        .welcome-desc{
+            margin-right: 350px;
+            font-size: small;
+            box-shadow:1px 1px 10px #f1edf2 ,1px 1px 10px #044349;
+            border:1px double  #c8c3cc ;
+        }
+        .contact{
+            color:#dbe3e7;
   background-color: #00394d ;
  margin: 20px;
   padding: 5px;
   border:2px solid cadetblue;
-  width:60px;
+  width:80px;
   border-radius:6px ;
   font-weight: 10px;
  font-family:fantasy;
- position: relative;
-}
+ margin-bottom: 70px;
+            
 
-.menus:hover{
-    border-radius: 20px;
-  background-color:  #190b62;
-    box-shadow:1px 1px 5px #e6cee9 ,1px 1px 5px #044349;
-}
-.menu-container{
-  margin:22px;
-  
-}
-.dropdown {
-  float: left;
-  padding:5px;
-  overflow: hidden;
- 
-}
-.dropbtn {
-  font-weight: 10px;
-  width:60px;
-  margin-top: 15px;
-  font-family:fantasy;
-  border-radius: 6px;
-  border: 2px solid cadetblue;
-  color:#dbe3e7;
-  padding: 5px;
-  background-color:#00394d; 
-  margin: 8px;
-  margin-right: 70px;
-  margin-bottom: 22px;
-}
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color:  #190b62;
-  cursor: pointer;color: #dbe3e7;
-  box-shadow:1px 1px 5px #e6cee9 ,1px 1px 5px #044349;
-  border:1px double  #c8c3cc ;
-  transition: 0.5s linear;
-}
-.dropdown-content {
-  display: none;
-  background-color:#77a8a8;
-min-width: auto;
-position: absolute;
+        }
+        .contact:hover{
+            background-color: #b71664;
+            color:white;
+            border-radius:20px;
+        }
+        .img-section{
+            margin-top: 120px;
+            position: relative;
+        }
+        .image-1{
+            width: 550px;
+            height: 300px;
+            margin-left: 0px;
+            padding-left: 0px;
+            margin-bottom: 90px;
 
-  box-shadow: 1px 1px 10px #e2d5e3 ,1px 1px 10px #03373c;
- 
-}
-.dropdown-content a {
-  float:none;
-  color: #021119;;
-  padding:22px;
-  text-decoration: none;
-  display: block;
-  z-index: 1;
-  text-align: left;
-}
-
-.description{
-    color: #fff;
-    margin-left: 50px;
-    margin-right: 50px;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-}
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  background-color: #273746;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-}
-
-.container {
-  padding: 0 16px;
-}
-
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.button {
-  border: transparent;
-  display: inline-block;
-  padding: 9px;
-  color: black;
-  background-color: #DC7633;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button:hover {
-  background-color: #555;
-}
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
-.h1-text{
-    text-align: center;
-    font-family: sans-serif;
-    color: whitesmoke;
-}
-.footer {
-            position: fixed;
-            right: 3%;
+        }
+        .image-2{
+            width: 250px;
+            height: 360px;
+            margin-left: 400px;
+            margin-bottom: 70px;
+            
+        }
+        .image-3{
+            width: 330px;
+            height: 250px;
+            margin-bottom: 300px;
+            margin-left: 60px;
+        }
+        .image-7{
+            width: 400px;
+            height: 600px;
+            margin-left: 340px;
+        }
+        .footer {margin-top:8%;
+            background-color: black;
+            color: #fefefe;
+            width: 100%;
             bottom: 0;
-            color: white;
+            left: 0;
+            cursor: pointer;
+          }
+          
+          .footer .heading {
+            color: #fefefe;
+            max-width: 1010px;
+            width: 90%;
+            text-transform: uppercase;
+            margin: 0 auto;
+            margin-bottom: 3rem;
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+          }
+          
+          .footer .content {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 1.5rem;
+          }
+          
+          .footer .content p {
+            margin-bottom: 1.3rem;
+          }
+          
+          .footer .content a {
+            text-decoration: none;
+            color: #fefefe;
+          }
+          
+          .footer .content a:hover {
+            border-bottom: 1px solid #971717;
+          }
+          
+          .footer .content h4 {
+            margin-bottom: 1.3rem;
+            font-size: 19px;
+          }
+          
+          footer {
             text-align: center;
-            }
-</style>
+            margin-bottom: 2rem;
+          }
+          
+          footer hr {
+            margin: 2rem 0;
+          }
+          h1{
+            color: antiquewhite;
+          }
+    </style>
 </head>
 <body>
-    <div class="main-menu">
-    <div class="logo">
-        <div class="menu-container"></div>
-    <span> <h5><b class="Logo">picsNow</b></h5></span> 
-<span><a href="index.html" class="menus" target="_blank">HOME</a></span>
-<span><a href="about.html"  class="menus" target="_blank">ABOUT US</a></span>
-    <span> <a href="wedding.html"  class="menus" target="_blank">NEXT</a></span>
-  
-   <div class="dropdown">
-    <button class="dropbtn">EXPLORE
-    </button>
-    <div class="dropdown-content">
-      <a href="wedding.html" target="_blank">wedding photoshootes</a>
-      <a href="model.html" target="_blank">model photoshootes</a>
-      <a href="contact.html" target="_blank">contact us</a>
-    </div>
-  </div>
-  <div class="h1-text">
-        <h1>CAPTURE AND CHERISH EVERY MOMENT WITH PICSNOW STUDIO...</h1>
-
-  <div class="row">
-    <div class="column">
-      <div class="card">
-        <img src="../img/P23.jpg" height="465px" width="500px">
-        <div class="container">
-          <h2>MODELLING PHOTSHOOT</h2>
-          <p>Modelling as a career, helps you create something in your own unique way.</p><br>
-          <p><button class="button"><b>Contact</b></button></p>
-        </div>
-      </div>
-    </div>
-  
-    <div class="column">
-      <div class="card">
-        <img src="../img/P21.jpg" height="480px" width="500px">
-        <div class="container">
-          <h2>WILDLIFE PHOTSHOOT</h2>
-          <p>Recording beauty of nature with mesmerizing precision.</p><br>
-          <p><button class="button"><b>Contact</b></button></p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="column">
-      <div class="card">
-        <img src="../img/P24.jpg" style="width:100%">
-        <div class="container">
-          <h2>WEDDING PHOTSHOOT</h2>
-          <p>make your Wedding A Wonderful Story.</p><br>
-          <p><button class="button"><b>Contact</b></button></p>
-        </div>
-        <div class="footer">
-            <p>Design by &copy G-14 ICP6.0</p>
+    <header id="uperpart">
+        <div class="main-menu">
+        <div class="menu-container">
+        <a href="../index.html" class="menus" target="_blank">HOME</a>
+         <a href="about.html"  class="menus" target="_blank">ABOUT US</a>
+         <a href="wedding.html"  class="menus" target="_blank">NEXT</a>
+         </div>
+         <div class="dropdown">
+          <button class="dropbtn">EXPLORE
+          </button>
+          <div class="dropdown-content">
+            <a href="wedding.html" target="_blank">wedding photoshootes</a>
+            <a href="model.html" target="_blank">model photoshootes</a>
+            <a href="portfolio.html" target="_blank">buy portfolio's</a>
           </div>
+        </div>
+        </div>
+<div class="top-img">
+    <img src= "./img/southindian wedding card1.jpg">
+    <img src="./img/model12.png">
+</div>
+    </div>
+    <h4 class="welcome-heading">Welcome !</h4>
+    <div class="welcome">
+        <img src="https://ml25zovx7n56.i.optimole.com/w:auto/h:auto/q:mauto/ig:avif/f:best/https://katiejeanphotos.com/wp-content/uploads/2023/08/5J2A7624.jpg" class="welcome-img">
+        <div class="welcome-start">
+            <h1>welcome to our photostudio.</h1>
+            <p class="welcome-desc">
+                I'm Katie.<br><br><br>
+
+                I began shooting as a teenager, driven by my love of nostalgia and a desire to create something that lasts.<br><br><br>
+                
+                For the past ten years, I’ve been photographing weddings of all sizes, with an approach that focuses on capturing the natural intimacy of a couple in love and honors the real stuff. <br><br><br>
+                
+                My approach is unobtrusive while giving gentle direction only when it's needed. I'm inspired by moments of delight and connection happening all around me, and because of this, I love to just step back and capture you at your happiest. I'm a very firm believer that the meaningful moments in life are the ones not planned and the photos taken when you're not aware you're being photographed will be your most cherished ones. <br><br><br>
+                
+                I'll be there so you can be present.
+                
+                </p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="" class="contact">Contact</a>
+        </div>
+    </div>
+    <div class="img-section">
+<img src="https://ml25zovx7n56.i.optimole.com/w:auto/h:auto/q:mauto/ig:avif/f:best/https://katiejeanphotos.com/wp-content/uploads/2021/11/0U5A9438-scaled.jpg" class="image-1">
+
+<img src="https://ml25zovx7n56.i.optimole.com/w:auto/h:auto/q:mauto/ig:avif/f:best/https://katiejeanphotos.com/wp-content/uploads/2023/10/0U5A7315.jpg" class="image-2">
+
+<img src="https://ml25zovx7n56.i.optimole.com/w:auto/h:auto/q:mauto/ig:avif/f:best/https://katiejeanphotos.com/wp-content/uploads/2020/08/0U5A0033.jpg" class="image-3">
+
+<img src="https://ml25zovx7n56.i.optimole.com/w:auto/h:auto/q:mauto/ig:avif/f:best/https://katiejeanphotos.com/wp-content/uploads/2023/01/shepherds_run_wedding-28.jpg" class="image-7">
+
+<div class="footer">
+    <div class="heading">
+      <h2 class="text-f">PICS_NOW<sup>📸</sup></h2>
+    </div>
+    <div class="content">
+      <div class="services">
+        <h4 class="text-f">Services</h4>
+        <p class="text-f">Photo Editing</p>
+        <p class="text-f">Lighting Setup</p>
+        <p class="text-f">Event Offers</p>
+        <p class="text-f">album services</a></p>
+      </div>
+      <div class="social-media">
+        <h4 class="text-f">Social</h4>
+        <p>
+          <a href="#"
+            ><i class="fa-brands fa-youtube" style="color: #edeff3;" class="text-f"></i>youtube </a
+          >
+        </p>
+        <p>
+          <a href="#"
+            ><i class="fab fa-twitter" class="text-f"></i> Twitter</a
+          >
+        </p>
+        
+        <p>
+          <a href="https://www.facebook.com/codewithfaraz"
+            ><i class="fab fa-facebook" class="text-f"></i> Facebook</a
+          >
+        </p>
+        <p>
+          <a href="https://www.instagram.com/codewithfaraz"
+            ><i class="fab fa-instagram" class="text-f"></i> Instagram</a
+          >
+        </p>
+      </div>
+      <div class="links">
+        <h4 class="text-f">Quick links</h4>
+        <p><a href="index.html" class="text-f">Home</a></p>
+        <p><a href="about.html" class="text-f">About</a></p>
+        <p><a href="portfolio.html" class="text-f">portfolio</a></p>
+        <p><a href="contact.html" class="text-f">Contact</a></p>
+        <p><a href="wedding.html" class="text-f">wedding photoshoot page</a></p>
+        <p><a href="model.html" class="text-f">wild-life-photoshootes page</a></p>
+        <p><a href="model.html" class="text-f">model photoshootes page</a></p>
+      </div>
+      <div class="details">
+        <h4 class="address" class="text-f">Address</h4>
+        <p class="text-f">
+          parvati hill,pune  <a href="<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.7027742435876!2d73.84441142389716!3d18.49711771989277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c008d9cdb0d5%3A0xfee5bbe3b35ed335!2sParvati%20Hill!5e0!3m2!1sen!2sin!4v1697846978905!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><i class="fa-solid fa-location-dot fa-bounce" style="color: #0c5be4;"></i></a>
+        </p>
+        <h4 class="mobile" class="text-f">Mobile</h4>
+        <p><a href="tell:8976543544" class="text-f">8976*****<i class="fa-solid fa-phone fa-bounce" style="color: #2369e1;"></i></p></a>
+        <h4 class="mail" class="text-f">Email</h4>
+        <p><a href="mailto:xyz@gmail.com" class="text-f">xyz@gmail.com <i class="fa-regular fa-envelope fa-bounce" style="color: #2968d6;"></i></p></a>
       </div>
     </div>
+    <footer>
+      <hr />
+     ICP6-g-14
+    </footer>
   </div>
-</div>
+
+
+<script src="https://kit.fontawesome.com/4e319ddf15.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+  
+
+  </div> 
+   
+ </div>
+<body>
+ 
+</html>
 </body>
 </html>
