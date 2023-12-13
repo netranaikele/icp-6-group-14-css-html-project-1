@@ -1,173 +1,175 @@
-                                        * {
-                                            margin: 0;
-                                            padding: 0;
-                                        }
-                                        
-                                        body {
-                                            background-color: rgb(16, 0, 0);
-                                        }
-                                        
-                                        .logo {
-                                            top: 20px;
-                                            left: 20px;
-                                            height: 90px;
-                                            position: fixed;
-                                            box-shadow: black;
-                                            filter: drop-shadow0px 0px 5px rgb(33, 1, 1), 1px 1px 5px 2px rgb(0, 10, 16);
-                                            z-index: 10;
-                                        }
-                                        
-                                        .image-top {
-                                            margin-top: 0px;
-                                            height: 600px;
-                                            margin-left: 10%;
-                                            margin-right: 10%;
-                                            width: 80%;
-                                        }
-                                        
-                                        .menu-container {
-                                            display: flex;
-                                            align-content: space-around;
-                                        }
-                                        
-                                        #menus {
-                                            margin-left: 30px;
-                                            padding: 2px;
-                                            font-weight: 75px;
-                                            font-size: 30px;
-                                            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                                            background: -webkit-linear-gradient(#FF5F6D, #FFC371);
-                                            -webkit-background-clip: text;
-                                            color: transparent;
-                                            -webkit-text-stroke-width: -1px;
-                                            -webkit-text-stroke-color: rgb(13, 11, 11);
-                                            z-index: 10;
-                                        }
-                                        
-                                        .main-menu {
-                                            position: absolute;
-                                            top: 35px;
-                                            left: 150px;
-                                            height: 70px;
-                                            position: fixed;
-                                            z-index: 10;
-                                        }
-                                        
-                                        .review-1 {
-                                            text-align: center;
-                                            max-width: 45%;
-                                            padding: 1rem;
-                                            position: relative;
-                                            background: linear-gradient(to right, #FF5F6D, #FFC371);
-                                            padding: 2px;
-                                            optacity: 0.4;
-                                            margin-left: auto;
-                                            margin-right: auto;
-                                            border-radius: 20px;
-                                        }
-                                        
-                                        .review {
-                                            background: #020b31;
-                                            color: white;
-                                            padding: 60px;
-                                            padding: 60px;
-                                            border-radius: 10px;
-                                            font-size: 20px;
-                                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                                        }
-                                        
-                                        .points {
-                                            margin-top: 20px;
-                                            text-align: center;
-                                            color: white;
-                                            justify-content: space-evenly;
-                                            margin-bottom: 20px;
-                                            padding: 10px;
-                                        }
-                                        /*FOOTER*/
-                                        
-                                        .footer {
-                                            margin-top: 0%;
-                                            background-image: linear-gradient(90deg, #FF5F6D, #FFC371);
-                                            width: 100%;
-                                            bottom: 0;
-                                            left: 0;
-                                            cursor: pointer;
-                                        }
-                                        
-                                        .footer .heading {
-                                            color: #130101;
-                                            max-width: 1010px;
-                                            width: 90%;
-                                            text-transform: uppercase;
-                                            margin: 0 auto;
-                                            margin-bottom: 3rem;
-                                            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-                                        }
-                                        
-                                        .footer .content {
-                                            display: flex;
-                                            justify-content: space-evenly;
-                                            margin: 1.5rem;
-                                        }
-                                        
-                                        .footer .content p {
-                                            margin-bottom: 1.3rem;
-                                        }
-                                        
-                                        .footer .content a {
-                                            text-decoration: none;
-                                            color: #0d0101;
-                                        }
-                                        
-                                        .footer .content a:hover {
-                                            border-bottom: 1px solid #971717;
-                                        }
-                                        
-                                        .footer .content h4 {
-                                            margin-bottom: 1.3rem;
-                                            font-size: 19px;
-                                        }
-                                        
-                                        .footer .heading {
-                                            color: #120101;
-                                            max-width: 1010px;
-                                            width: 90%;
-                                            text-transform: uppercase;
-                                            margin: 0 auto;
-                                            margin-bottom: 3rem;
-                                            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-                                        }
-                                        
-                                        .footer .content {
-                                            display: flex;
-                                            justify-content: space-evenly;
-                                            margin: 1.5rem;
-                                        }
-                                        
-                                        .footer .content p {
-                                            margin-bottom: 1.3rem;
-                                        }
-                                        
-                                        .footer .content a {
-                                            text-decoration: none;
-                                            color: #120000;
-                                        }
-                                        
-                                        .footer .content a:hover {
-                                            border-bottom: 1px solid #971717;
-                                        }
-                                        
-                                        .footer .content h4 {
-                                            margin-bottom: 1.3rem;
-                                            font-size: 19px;
-                                        }
-                                        
-                                        footer {
-                                            text-align: center;
-                                            margin-bottom: 2rem;
-                                        }
-                                        
-                                        footer hr {
-                                            margin: 2rem 0;
-                                        }
+* {
+    margin: 0;
+    padding: 0;
+ 
+}
+
+
+body {
+    background-color:#3a3a3a;
+}
+
+.logo {
+    top: 20px;
+    left: 20px;
+    height: 90px;
+    position: fixed;
+    box-shadow: black;
+    filter: drop-shadow0px 0px 5px rgb(33, 1, 1), 1px 1px 5px 2px rgb(0, 10, 16);
+    z-index: 10;
+}
+
+.image-top {
+    margin-top: 0px;
+    height: 600px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+.menu-container {
+    display: flex;
+    align-content: space-around;
+}
+
+#menus {
+    margin-left: 30px;
+    padding: 2px;
+    font-weight: 75px;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: -webkit-linear-gradient(#FF5F6D, #FFC371);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke-width: -1px;
+    -webkit-text-stroke-color: rgb(13, 11, 11);
+    z-index: 10;
+}
+
+.main-menu {
+    position: absolute;
+    top: 35px;
+    left: 150px;
+    height: 70px;
+    position: fixed;
+    z-index: 10;
+}
+
+.review-1 {
+    text-align: center;
+    max-width: 45%;
+    padding: 1rem;
+    position: relative;
+    background: linear-gradient(to right, #FF5F6D, #FFC371);
+    padding: 2px;
+    optacity: 0.4;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+.review {
+    background: #020b31;
+    color: white;
+    padding: 60px;
+    padding: 60px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.points {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+/*FOOTER*/
+
+.footer {
+    margin-top: 0%;
+    background-image: linear-gradient(90deg, #FF5F6D, #FFC371);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.footer .heading {
+    color: #130101;
+    max-width: 1010px;
+    width: 90%;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.footer .content {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5rem;
+}
+
+.footer .content p {
+    margin-bottom: 1.3rem;
+}
+
+.footer .content a {
+    text-decoration: none;
+    color: #0d0101;
+}
+
+.footer .content a:hover {
+    border-bottom: 1px solid #971717;
+}
+
+.footer .content h4 {
+    margin-bottom: 1.3rem;
+    font-size: 19px;
+}
+
+.footer .heading {
+    color: #120101;
+    max-width: 1010px;
+    width: 90%;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.footer .content {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5rem;
+}
+
+.footer .content p {
+    margin-bottom: 1.3rem;
+}
+
+.footer .content a {
+    text-decoration: none;
+    color: #120000;
+}
+
+.footer .content a:hover {
+    border-bottom: 1px solid #971717;
+}
+
+.footer .content h4 {
+    margin-bottom: 1.3rem;
+    font-size: 19px;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+footer hr {
+    margin: 2rem 0;
+}
