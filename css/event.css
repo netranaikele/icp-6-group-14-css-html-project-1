@@ -4,17 +4,18 @@
 }
 
 body {
-    background-color: rgb(16, 0, 0);
+    background-color:#3a3a3a;
 }
 
 .logo {
-    top: 20px;
-    left: 20px;
-    height: 90px;
-    position: fixed;
+   
+    height: 150px;
+ margin-top: 120px;
+ 
     box-shadow: black;
     filter: drop-shadow0px 0px 5px rgb(33, 1, 1), 1px 1px 5px 2px rgb(0, 10, 16);
-    z-index: 10;
+    
+    
 }
 
 .menu-container {
@@ -45,7 +46,78 @@ body {
     z-index: 10;
 }
 
+.start-container{
+    display: flex;justify-content: center; align-items: center;
+}
+#photo1{
+    width: 160px;
+    height: 170px;
+    border-radius: 50%;
+    margin-top: 120px;
+    border:3px solid burlywood;
+    margin-left: 70px;
+}
+#photo2{
+    width: 160px;
+    height: 170px;
+    border-radius: 50%;
+    margin-top: 120px;
+    border:3px solid burlywood;
+    margin-left: 70px;
+}
+.bar{margin-top: 3px;;
+    background-color: #eeeeee90;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    margin:10px;
+    padding: 6px 10px;
+    text-transform: uppercase;
+    width: 150px;
+    
+}
+h2{
+    margin: 3px;
+    margin-top: 5px;
+clear:both;
+color: white;
+    font-family: "UniversCom55Roman", Lucida Grande, Tahoma, Verdana, Arial, sans-serif;}
+.con-bar{
+    background-color: #232120;
+}
+.sec-part{display: flex;
+    align-items: center;
+    float: none;
+    margin: 0 0 15px;
+}
+.link{
+    background-color:#eeeeee90 ;
+    color: aliceblue;
+    padding: 7px;
+    width:30px;
+    border-radius: 5px;
+   margin-top:60px;
+    margin-left: 30px;
+    border: 1px solid white;
+}
+.fnt{color: aliceblue;
+font-size: larger;
+    font-family: "UniversCom55Roman", Lucida Grande, Tahoma, Verdana, Arial, sans-serif;
+   margin-left: 0%;
+margin-top: 80px;}
 
+.img{
+    height: 300px;
+    width:400px;
+    margin-left: 12%;
+}
+.fnt2{
+    color: aliceblue;
+font-size: larger;
+    font-family: "UniversCom55Roman", Lucida Grande, Tahoma, Verdana, Arial, sans-serif;
+   margin-left: 0%;
+margin-top: 20px;
+}
 /*FOOTER*/
 
 .footer {
